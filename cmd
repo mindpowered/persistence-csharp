@@ -1,0 +1,12 @@
+/nologo
+/optimize+
+/debug-
+/unsafe-
+/warn:0
+/out:bin/csharp.dll
+/target:library
+/reference:bin/maglev.dll
+src\persistence\Persistence.cs
+src\EnumValue.cs
+src\Type.cs
+src\UInt.cs
