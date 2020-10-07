@@ -42,7 +42,7 @@ public class Persistence
 	}
 
 	/**
-	 * TBD
+	 * Use a Mutator to change stored data
 	 * @param recordType type of record being changed (eg. databsae table name)
 	 * @param operationName action being performed on the record (eg. insert, update)
 	 * @param recordData data being updated or saved by passing through updateMapper and then strategyMethod
@@ -55,7 +55,7 @@ public class Persistence
 	}
 
 	/**
-	 * TBD
+	 * Use a Getter to retrieve data
 	 * @param recordType type of record being retrieved (eg. databsae table name)
 	 * @param operationName query being performed for the record type (eg. findById, findByName, findActive, getInsertedId)
 	 * @param queryValues values that will be passed through queryMapper and then strategyMethod to perform the query
