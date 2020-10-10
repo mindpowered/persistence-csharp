@@ -1,4 +1,4 @@
-/builds/mindpowered/logic/persistence
+c:/builds/mindpowered/logic/persistence
 begin defines
 NET_20
 cs

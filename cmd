@@ -3,9 +3,9 @@
 /debug-
 /unsafe-
 /warn:0
-/out:bin/csharp.dll
+/out:c:/builds/mindpowered/logic/persistence/build/vcs/csharp/bin/persistence.dll
 /target:library
-/reference:bin/maglev.dll
+/reference:c:/builds/mindpowered/logic/persistence/build/vcs/csharp/bin/maglev.dll
 src\persistence\Persistence.cs
 src\EnumValue.cs
 src\Type.cs
