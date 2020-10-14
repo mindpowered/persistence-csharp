@@ -574,23 +574,23 @@ namespace persistence {
 				object strategyMethod = args[2];
 				#line 39 "/my-component/src/persistence/Persistence.hx"
 				object queryMapper = null;
-				if (( args.length > 4 )) {
+				if (( args.length >= 4 )) {
 					#line 41 "/my-component/src/persistence/Persistence.hx"
 					queryMapper = args[3];
 				}
 				
 				#line 43 "/my-component/src/persistence/Persistence.hx"
 				object resultMapper = null;
-				if (( args.length > 5 )) {
+				if (( args.length >= 5 )) {
 					#line 45 "/my-component/src/persistence/Persistence.hx"
 					resultMapper = args[4];
 				}
 				
 				#line 47 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Null<bool> useQueryValuesAsParams = default(global::haxe.lang.Null<bool>);
-				if (( args.length > 6 )) {
+				if (( args.length >= 6 )) {
 					#line 49 "/my-component/src/persistence/Persistence.hx"
-					resultMapper = args[5];
+					useQueryValuesAsParams = global::haxe.lang.Null<object>.ofDynamic<bool>(((object) (args[5]) ));
 				}
 				
 				#line 51 "/my-component/src/persistence/Persistence.hx"
