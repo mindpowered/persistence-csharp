@@ -8,6 +8,7 @@
  * Provides a way of storing data for mindpowered packages.
  * When mindpowered packages need to persist data, they will use Get and Mutate, which in turn will call the Mutators and Getters you have set up.
  * You can set up the Mutators and Getters however you like whether to access a database such as MySQL or MongoDB, or simply write and read from text files.
+ * Note: when using a mapping (updateMapper, queryMapper, resultMapper), the data will be passed in as the first argument to the mapping function.
  */
 public class Persistence
 {
@@ -18,11 +19,12 @@ public class Persistence
 	 * @param operationName action being performed on the record (eg. insert, update)
 	 * @param strategyMethod method to call to actually perform the mutation
 	 * @param updateMapper method to call on recordData before calling strategyMethod with the results
+	 * @param useRecordDataAsParams if set to true, the recordData will be passed as the arguments to strategyMethod, rather than as the first argument
 	*/
-	AddMutator(recordType, operationName, strategyMethod, updateMapper)
+	AddMutator(recordType, operationName, strategyMethod, updateMapper, useRecordDataAsParams)
 	{
 		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
-		//TODO: C# let args = [recordType, operationName, strategyMethod, updateMapper];
+		//TODO: C# let args = [recordType, operationName, strategyMethod, updateMapper, useRecordDataAsParams];
 		//TODO: bus.call('Persistence.AddMutator', args);
 	}
 
@@ -33,11 +35,12 @@ public class Persistence
 	 * @param strategyMethod method to call to actually perform the data retrieval
 	 * @param queryMapper method to call on queryValues before calling strategyMethod with the results
 	 * @param resultMapper method to call on data returned from the strategyMethod before returning the results
+	 * @param useQueryValuesAsParams if set to true, the queryValues will be passed as the arguments to strategyMethod, rather than as the first argument
 	*/
-	AddGetter(recordType, operationName, strategyMethod, queryMapper, resultMapper)
+	AddGetter(recordType, operationName, strategyMethod, queryMapper, resultMapper, useQueryValuesAsParams)
 	{
 		//TODO: C# let bus = maglev.maglev.MagLev.getInstance('default');
-		//TODO: C# let args = [recordType, operationName, strategyMethod, queryMapper, resultMapper];
+		//TODO: C# let args = [recordType, operationName, strategyMethod, queryMapper, resultMapper, useQueryValuesAsParams];
 		//TODO: bus.call('Persistence.AddGetter', args);
 	}
 
