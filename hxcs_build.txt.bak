@@ -71,9 +71,9 @@ M System.Collections.IDictionaryEnumerator
 M System.Runtime.InteropServices._AssemblyName
 M persistence.Persistence
 C persistence.Persistence
-C persistence.Persistence_addMutator_71__Fun
-C persistence.Persistence_addGetter_82__Fun
-C persistence.Persistence_addGetter_85__Fun
+C persistence.Persistence_addMutator_72__Fun
+C persistence.Persistence_addGetter_83__Fun
+C persistence.Persistence_addGetter_86__Fun
 C persistence.Persistence___hx_ctor_persistence_Persistence_20__Fun
 C persistence.Persistence___hx_ctor_persistence_Persistence_35__Fun
 C persistence.Persistence___hx_ctor_persistence_Persistence_54__Fun
