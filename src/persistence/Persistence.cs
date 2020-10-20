@@ -250,26 +250,26 @@ namespace persistence {
 		
 		public virtual object convertToHaxe(global::maglev.MagLevAny x) {
 			#line 197 "/my-component/src/persistence/Persistence.hx"
-			if (( x.getType() == global::maglev._MagLev.MagLevType_Impl_.MagLevType_Null )) {
+			if (( x.getType() == global::maglev.MagLevNull.getStaticType() )) {
 				#line 198 "/my-component/src/persistence/Persistence.hx"
 				return null;
 			}
-			else if (( x.getType() == global::maglev._MagLev.MagLevType_Impl_.MagLevType_Boolean )) {
+			else if (( x.getType() == global::maglev.MagLevBoolean.getStaticType() )) {
 				#line 201 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevBoolean y = ((global::maglev.MagLevBoolean) (x) );
 				return ((object) (y.getBool()) );
 			}
-			else if (( x.getType() == global::maglev._MagLev.MagLevType_Impl_.MagLevType_String )) {
+			else if (( x.getType() == global::maglev.MagLevString.getStaticType() )) {
 				#line 205 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevString y1 = ((global::maglev.MagLevString) (x) );
 				return ((object) (y1.getString()) );
 			}
-			else if (( x.getType() == global::maglev._MagLev.MagLevType_Impl_.MagLevType_Number )) {
+			else if (( x.getType() == global::maglev.MagLevNumber.getStaticType() )) {
 				#line 209 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevNumber y2 = ((global::maglev.MagLevNumber) (x) );
 				return ((object) (y2.getFloat()) );
 			}
-			else if (( x.getType() == global::maglev._MagLev.MagLevType_Impl_.MagLevType_Array )) {
+			else if (( x.getType() == global::maglev.MagLevArray.getStaticType() )) {
 				#line 213 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevArray y3 = ((global::maglev.MagLevArray) (x) );
 				global::Array<object> arr = new global::Array<object>();
@@ -284,7 +284,7 @@ namespace persistence {
 				#line 220 "/my-component/src/persistence/Persistence.hx"
 				return ((object) (arr) );
 			}
-			else if (( x.getType() == global::maglev._MagLev.MagLevType_Impl_.MagLevType_Object )) {
+			else if (( x.getType() == global::maglev.MagLevObject.getStaticType() )) {
 				#line 223 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevObject y4 = ((global::maglev.MagLevObject) (x) );
 				global::haxe.ds.StringMap<object> map = new global::haxe.ds.StringMap<object>();
