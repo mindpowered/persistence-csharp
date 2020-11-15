@@ -65,6 +65,8 @@
 	
     <Compile Include="src\Type.cs"/>
 	
+    <Compile Include="src\persistence\MagLevConverter.cs"/>
+	
     <Compile Include="src\UInt.cs"/>
 	
   </ItemGroup>

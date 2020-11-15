@@ -9,4 +9,5 @@
 src\persistence\Persistence.cs
 src\EnumValue.cs
 src\Type.cs
+src\persistence\MagLevConverter.cs
 src\UInt.cs
