@@ -256,7 +256,7 @@ namespace persistence {
 			if (( ((object) (getter.strategyMethod) ) is global::haxe.lang.Function )) {
 				#line 225 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Function strategyMethod = ((global::haxe.lang.Function) (((object) (getter.strategyMethod) )) );
-				callback.__hx_invoke1_o(default(double), ((object) (strategyMethod.__hx_invoke1_o(default(double), ((object) (new global::haxe.lang.Closure(this, "query", 1575652104)) ))) ));
+				callback.__hx_invoke1_o(default(double), ((object) (strategyMethod.__hx_invoke1_o(default(double), queryValues)) ));
 			}
 			else if (global::Std.isOfType(((object) (getter.strategyMethod) ), ((object) (typeof(string)) ))) {
 				#line 229 "/my-component/src/persistence/Persistence.hx"
