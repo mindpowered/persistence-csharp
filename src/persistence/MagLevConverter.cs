@@ -6,7 +6,7 @@ namespace persistence {
 		
 		static MagLevConverter() {
 			unchecked{
-				#line 11 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 13 "/my-component/src/persistence/MagLevConverter.hx"
 				global::haxe.lang.FieldLookup.addFields(new int[]{407283053, 1224901875}, new string[]{"hasNext", "next"});
 			}
 		}
@@ -17,7 +17,7 @@ namespace persistence {
 		
 		
 		public MagLevConverter() {
-			#line 11 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 13 "/my-component/src/persistence/MagLevConverter.hx"
 			global::persistence.MagLevConverter.__hx_ctor_persistence_MagLevConverter(this);
 		}
 		#line default
@@ -27,69 +27,69 @@ namespace persistence {
 		
 		
 		public static object convertToHaxe(global::maglev.MagLevAny x) {
-			#line 14 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 16 "/my-component/src/persistence/MagLevConverter.hx"
 			if (( x.getType() == global::maglev.MagLevNull.getStaticType() )) {
-				#line 15 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 17 "/my-component/src/persistence/MagLevConverter.hx"
 				return null;
 			}
 			else if (( x.getType() == global::maglev.MagLevBoolean.getStaticType() )) {
-				#line 18 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 20 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevBoolean y = ((global::maglev.MagLevBoolean) (x) );
 				return ((object) (y.getBool()) );
 			}
 			else if (( x.getType() == global::maglev.MagLevString.getStaticType() )) {
-				#line 22 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 24 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevString y1 = ((global::maglev.MagLevString) (x) );
 				return ((object) (y1.getString()) );
 			}
 			else if (( x.getType() == global::maglev.MagLevNumber.getStaticType() )) {
-				#line 26 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 28 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevNumber y2 = ((global::maglev.MagLevNumber) (x) );
 				return ((object) (y2.getFloat()) );
 			}
 			else if (( x.getType() == global::maglev.MagLevArray.getStaticType() )) {
-				#line 30 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 32 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevArray y3 = ((global::maglev.MagLevArray) (x) );
 				global::Array<object> arr = new global::Array<object>();
-				#line 32 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 34 "/my-component/src/persistence/MagLevConverter.hx"
 				int i = 0;
 				while (( i < y3.size() )) {
-					#line 34 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 36 "/my-component/src/persistence/MagLevConverter.hx"
 					arr.push(global::persistence.MagLevConverter.convertToHaxe(y3.@get(i)));
 					 ++ i;
 				}
 				
-				#line 37 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 39 "/my-component/src/persistence/MagLevConverter.hx"
 				return ((object) (arr) );
 			}
 			else if (( x.getType() == global::maglev.MagLevObject.getStaticType() )) {
-				#line 40 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 42 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevObject y4 = ((global::maglev.MagLevObject) (x) );
 				global::haxe.ds.StringMap<object> map = new global::haxe.ds.StringMap<object>();
-				#line 42 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 44 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevArray keys = y4.keys();
 				int i1 = 0;
-				#line 44 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 46 "/my-component/src/persistence/MagLevConverter.hx"
 				while (( i1 < keys.size() )) {
-					#line 45 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 47 "/my-component/src/persistence/MagLevConverter.hx"
 					string key = (((global::maglev.MagLevString) (keys.@get(i1)) )).getString();
 					map.@set(key, global::persistence.MagLevConverter.convertToHaxe(y4.@get(key)));
-					#line 47 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 49 "/my-component/src/persistence/MagLevConverter.hx"
 					 ++ i1;
 				}
 				
-				#line 49 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 51 "/my-component/src/persistence/MagLevConverter.hx"
 				return ((object) (map) );
 			}
 			else if (( x.getType() == global::maglev.MagLevFunction.getStaticType() )) {
-				#line 52 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 54 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevFunction y5 = ((global::maglev.MagLevFunction) (x) );
-				global::haxe.lang.Function f = new global::persistence.MagLevConverter_convertToHaxe_53__Fun(y5);
-				#line 65 "/my-component/src/persistence/MagLevConverter.hx"
+				global::haxe.lang.Function f = new global::persistence.MagLevConverter_convertToHaxe_55__Fun(y5);
+				#line 69 "/my-component/src/persistence/MagLevConverter.hx"
 				return ((object) (f) );
 			}
 			else {
-				#line 68 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 72 "/my-component/src/persistence/MagLevConverter.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("convertToHaxe: unknown type")) );
 			}
 			
@@ -97,101 +97,101 @@ namespace persistence {
 		#line default
 		
 		public static global::maglev.MagLevAny convertToMagLev(object x) {
-			#line 73 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 77 "/my-component/src/persistence/MagLevConverter.hx"
 			if (( x == null )) {
-				#line 74 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 78 "/my-component/src/persistence/MagLevConverter.hx"
 				return global::maglev.MagLevNull.create();
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(bool)) ))) {
-				#line 77 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 81 "/my-component/src/persistence/MagLevConverter.hx"
 				return global::maglev.MagLevBoolean.fromBool(global::haxe.lang.Runtime.toBool(x));
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(string)) ))) {
-				#line 80 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 84 "/my-component/src/persistence/MagLevConverter.hx"
 				return global::maglev.MagLevString.fromString(global::haxe.lang.Runtime.toString(x));
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(int)) ))) {
-				#line 83 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 87 "/my-component/src/persistence/MagLevConverter.hx"
 				return global::maglev.MagLevNumber.fromInt(((int) (global::haxe.lang.Runtime.toInt(x)) ));
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(double)) ))) {
-				#line 86 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 90 "/my-component/src/persistence/MagLevConverter.hx"
 				return global::maglev.MagLevNumber.fromFloat(((double) (global::haxe.lang.Runtime.toDouble(((object) (x) ))) ));
 			}
 			else if (( ((object) (x) ) is global::haxe.lang.Function )) {
-				#line 89 "/my-component/src/persistence/MagLevConverter.hx"
-				global::haxe.lang.Function f = new global::persistence.MagLevConverter_convertToMagLev_89__Fun(x);
-				#line 95 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 93 "/my-component/src/persistence/MagLevConverter.hx"
+				global::haxe.lang.Function f = new global::persistence.MagLevConverter_convertToMagLev_93__Fun(x);
+				#line 103 "/my-component/src/persistence/MagLevConverter.hx"
 				return global::maglev.MagLevFunction.fromFunction(f);
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(global::Array<object>)) ))) {
-				#line 98 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 106 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevArray arr = global::maglev.MagLevArray.create();
 				global::Array<object> y = ((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (x) )) ))) );
-				#line 100 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 108 "/my-component/src/persistence/MagLevConverter.hx"
 				{
-					#line 100 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 108 "/my-component/src/persistence/MagLevConverter.hx"
 					int _g = 0;
-					#line 100 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 108 "/my-component/src/persistence/MagLevConverter.hx"
 					while (( _g < y.length )) {
-						#line 100 "/my-component/src/persistence/MagLevConverter.hx"
+						#line 108 "/my-component/src/persistence/MagLevConverter.hx"
 						object item = y[_g];
-						#line 100 "/my-component/src/persistence/MagLevConverter.hx"
+						#line 108 "/my-component/src/persistence/MagLevConverter.hx"
 						 ++ _g;
 						arr.push(global::persistence.MagLevConverter.convertToMagLev(item));
 					}
 					
 				}
 				
-				#line 103 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 111 "/my-component/src/persistence/MagLevConverter.hx"
 				return arr;
 			}
 			else if (global::Std.isOfType(((object) (x) ), ((object) (typeof(global::haxe.ds.StringMap<object>)) ))) {
-				#line 106 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 114 "/my-component/src/persistence/MagLevConverter.hx"
 				global::haxe.ds.StringMap<object> map = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((object) (x) )) ))) );
 				global::maglev.MagLevObject obj = global::maglev.MagLevObject.create();
-				#line 108 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 116 "/my-component/src/persistence/MagLevConverter.hx"
 				{
-					#line 108 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 116 "/my-component/src/persistence/MagLevConverter.hx"
 					object key = ((object) (new global::haxe.ds._StringMap.StringMapKeyIterator<object>(((global::haxe.ds.StringMap<object>) (map) ))) );
-					#line 108 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 116 "/my-component/src/persistence/MagLevConverter.hx"
 					while (global::haxe.lang.Runtime.toBool(global::haxe.lang.Runtime.callField(key, "hasNext", 407283053, null))) {
-						#line 108 "/my-component/src/persistence/MagLevConverter.hx"
+						#line 116 "/my-component/src/persistence/MagLevConverter.hx"
 						string key1 = global::haxe.lang.Runtime.toString(global::haxe.lang.Runtime.callField(key, "next", 1224901875, null));
 						obj.@set(key1, global::persistence.MagLevConverter.convertToMagLev((map.@get(key1)).toDynamic()));
 					}
 					
 				}
 				
-				#line 111 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 119 "/my-component/src/persistence/MagLevConverter.hx"
 				return obj;
 			}
 			else if (global::Reflect.isObject(x)) {
-				#line 114 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 122 "/my-component/src/persistence/MagLevConverter.hx"
 				global::maglev.MagLevObject obj1 = global::maglev.MagLevObject.create();
 				{
-					#line 115 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 123 "/my-component/src/persistence/MagLevConverter.hx"
 					int _g1 = 0;
-					#line 115 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 123 "/my-component/src/persistence/MagLevConverter.hx"
 					global::Array<string> _g2 = global::Reflect.fields(x);
-					#line 115 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 123 "/my-component/src/persistence/MagLevConverter.hx"
 					while (( _g1 < _g2.length )) {
-						#line 115 "/my-component/src/persistence/MagLevConverter.hx"
+						#line 123 "/my-component/src/persistence/MagLevConverter.hx"
 						string field = _g2[_g1];
-						#line 115 "/my-component/src/persistence/MagLevConverter.hx"
+						#line 123 "/my-component/src/persistence/MagLevConverter.hx"
 						 ++ _g1;
 						object val = global::Reflect.getProperty(x, field);
-						#line 117 "/my-component/src/persistence/MagLevConverter.hx"
+						#line 125 "/my-component/src/persistence/MagLevConverter.hx"
 						obj1.@set(field, global::persistence.MagLevConverter.convertToMagLev(val));
 					}
 					
 				}
 				
-				#line 119 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 127 "/my-component/src/persistence/MagLevConverter.hx"
 				return obj1;
 			}
 			else {
-				#line 122 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 130 "/my-component/src/persistence/MagLevConverter.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("convertToMagLev: unknown type")) );
 			}
 			
@@ -205,44 +205,92 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class MagLevConverter_convertToHaxe_53__Fun : global::haxe.lang.Function {
+	public class MagLevConverter_convertToHaxe_61__Fun : global::haxe.lang.Function {
 		
-		public MagLevConverter_convertToHaxe_53__Fun(global::maglev.MagLevFunction y5) : base(1, 0) {
-			#line 53 "/my-component/src/persistence/MagLevConverter.hx"
-			this.y5 = y5;
+		public MagLevConverter_convertToHaxe_61__Fun(global::maglev.MagLevResult ret) : base(1, 0) {
+			#line 62 "/my-component/src/persistence/MagLevConverter.hx"
+			this.ret = ret;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 53 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 61 "/my-component/src/persistence/MagLevConverter.hx"
+			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
+			throw ((global::System.Exception) (global::haxe.Exception.thrown(this.ret.getError().getMessage())) );
+		}
+		#line default
+		
+		public global::maglev.MagLevResult ret;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class MagLevConverter_convertToHaxe_64__Fun : global::haxe.lang.Function {
+		
+		public MagLevConverter_convertToHaxe_64__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 64 "/my-component/src/persistence/MagLevConverter.hx"
+			this.callback = callback;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 64 "/my-component/src/persistence/MagLevConverter.hx"
+			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), global::persistence.MagLevConverter.convertToHaxe(result));
+			#line 66 "/my-component/src/persistence/MagLevConverter.hx"
+			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class MagLevConverter_convertToHaxe_55__Fun : global::haxe.lang.Function {
+		
+		public MagLevConverter_convertToHaxe_55__Fun(global::maglev.MagLevFunction y5) : base(2, 0) {
+			#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+			this.y5 = y5;
+		}
+		#line default
+		
+		public override object __hx_invoke2_o(double __fn_float1, object __fn_dyn1, double __fn_float2, object __fn_dyn2) {
+			#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+			global::haxe.lang.Function callback = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::haxe.lang.Function) (((object) (__fn_float2) )) )) : (((global::haxe.lang.Function) (__fn_dyn2) )) );
+			#line 55 "/my-component/src/persistence/MagLevConverter.hx"
 			global::Array<object> args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (((object) (__fn_float1) )) ))) )) : (((global::Array<object>) (global::Array<object>.__hx_cast<object>(((global::Array) (__fn_dyn1) ))) )) );
 			global::maglev.MagLevArray arr = global::maglev.MagLevArray.create();
-			#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 57 "/my-component/src/persistence/MagLevConverter.hx"
 			{
-				#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 57 "/my-component/src/persistence/MagLevConverter.hx"
 				int _g = 0;
-				#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+				#line 57 "/my-component/src/persistence/MagLevConverter.hx"
 				while (( _g < args.length )) {
-					#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 57 "/my-component/src/persistence/MagLevConverter.hx"
 					object arg = args[_g];
-					#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+					#line 57 "/my-component/src/persistence/MagLevConverter.hx"
 					 ++ _g;
 					arr.push(global::persistence.MagLevConverter.convertToMagLev(arg));
 				}
 				
 			}
 			
-			#line 58 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 60 "/my-component/src/persistence/MagLevConverter.hx"
 			global::maglev.MagLevResult ret = this.y5.call(arr);
-			if (ret.isError()) {
-				#line 60 "/my-component/src/persistence/MagLevConverter.hx"
-				throw ((global::System.Exception) (global::haxe.Exception.thrown(ret.getError().getMessage())) );
-			}
-			else {
-				#line 62 "/my-component/src/persistence/MagLevConverter.hx"
-				return global::persistence.MagLevConverter.convertToHaxe(ret.getResult());
-			}
-			
+			ret.onError(new global::persistence.MagLevConverter_convertToHaxe_61__Fun(ret));
+			#line 64 "/my-component/src/persistence/MagLevConverter.hx"
+			ret.onResult(new global::persistence.MagLevConverter_convertToHaxe_64__Fun(callback));
+			#line 55 "/my-component/src/persistence/MagLevConverter.hx"
+			return null;
 		}
 		#line default
 		
@@ -255,23 +303,51 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class MagLevConverter_convertToMagLev_89__Fun : global::haxe.lang.Function {
+	public class MagLevConverter_convertToMagLev_97__Fun : global::haxe.lang.Function {
 		
-		public MagLevConverter_convertToMagLev_89__Fun(object x) : base(1, 0) {
-			#line 89 "/my-component/src/persistence/MagLevConverter.hx"
+		public MagLevConverter_convertToMagLev_97__Fun(global::maglev.MagLevResult r) : base(1, 0) {
+			#line 97 "/my-component/src/persistence/MagLevConverter.hx"
+			this.r = r;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 97 "/my-component/src/persistence/MagLevConverter.hx"
+			object haxeRet = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
+			this.r.setResult(global::persistence.MagLevConverter.convertToMagLev(haxeRet));
+			#line 99 "/my-component/src/persistence/MagLevConverter.hx"
+			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+		}
+		#line default
+		
+		public global::maglev.MagLevResult r;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class MagLevConverter_convertToMagLev_93__Fun : global::haxe.lang.Function {
+		
+		public MagLevConverter_convertToMagLev_93__Fun(object x) : base(1, 0) {
+			#line 93 "/my-component/src/persistence/MagLevConverter.hx"
 			this.x = x;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 89 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 93 "/my-component/src/persistence/MagLevConverter.hx"
 			global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 			global::haxe.lang.Function y = ((global::haxe.lang.Function) (((object) (this.x) )) );
-			#line 91 "/my-component/src/persistence/MagLevConverter.hx"
+			#line 95 "/my-component/src/persistence/MagLevConverter.hx"
 			object haxeArgs = global::persistence.MagLevConverter.convertToHaxe(args);
-			object haxeRet = ((object) (y.__hx_invoke1_o(default(double), haxeArgs)) );
-			#line 93 "/my-component/src/persistence/MagLevConverter.hx"
-			return global::maglev.MagLevResult.fromResult(global::persistence.MagLevConverter.convertToMagLev(haxeRet));
+			global::maglev.MagLevResult r = global::maglev.MagLevResult.createAsync();
+			#line 97 "/my-component/src/persistence/MagLevConverter.hx"
+			y.__hx_invoke2_o(default(double), haxeArgs, default(double), new global::persistence.MagLevConverter_convertToMagLev_97__Fun(r));
+			#line 101 "/my-component/src/persistence/MagLevConverter.hx"
+			return r;
 		}
 		#line default
 		

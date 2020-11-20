@@ -6,15 +6,15 @@ namespace persistence {
 		
 		static Persistence() {
 			unchecked{
-				#line 10 "/my-component/src/persistence/Persistence.hx"
+				#line 12 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.FieldLookup.addFields(new int[]{5144726, 5541879, 13816588, 117802505, 199770554, 263824376, 907774356, 1069478790, 1314583562, 1429011148, 1533285388, 1575652104, 1776607685, 1860196033}, new string[]{"get", "obj", "SuppressWarnings", "update", "mapResults", "convertToMagLev", "convertToHaxe", "mutate", "calcKey", "mapQuery", "addGetter", "query", "mapUpdate", "addMutator"});
-				#line 10 "/my-component/src/persistence/Persistence.hx"
+				#line 12 "/my-component/src/persistence/Persistence.hx"
 				{
-					#line 10 "/my-component/src/persistence/Persistence.hx"
+					#line 12 "/my-component/src/persistence/Persistence.hx"
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						object __temp_odecl1 = new global::haxe.lang.DynamicObject(new int[]{13816588}, new object[]{new global::Array<object>(new object[]{new global::Array<object>(new object[]{"checkstyle:FieldDocComment", "checkstyle:LocalVariableName", "checkstyle:MultipleStringLiterals", "checkstyle:MagicNumber"})})}, new int[]{}, new double[]{});
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						global::persistence.Persistence.__meta__ = new global::haxe.lang.DynamicObject(new int[]{5541879}, new object[]{__temp_odecl1}, new int[]{}, new double[]{});
 					}
 					
@@ -29,26 +29,26 @@ namespace persistence {
 		
 		
 		public Persistence(global::maglev.MagLev bus) {
-			#line 16 "/my-component/src/persistence/Persistence.hx"
+			#line 18 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence.__hx_ctor_persistence_Persistence(this, bus);
 		}
 		#line default
 		
 		protected static void __hx_ctor_persistence_Persistence(global::persistence.Persistence __hx_this, global::maglev.MagLev bus) {
-			#line 16 "/my-component/src/persistence/Persistence.hx"
+			#line 18 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence _gthis = __hx_this;
 			__hx_this.mutators = new global::haxe.ds.StringMap<object>();
-			#line 18 "/my-component/src/persistence/Persistence.hx"
+			#line 20 "/my-component/src/persistence/Persistence.hx"
 			__hx_this.getters = new global::haxe.ds.StringMap<object>();
 			__hx_this.maglev = bus;
-			#line 20 "/my-component/src/persistence/Persistence.hx"
-			__hx_this.maglev.register("Persistence.AddMutator", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_20__Fun(_gthis)));
-			#line 35 "/my-component/src/persistence/Persistence.hx"
-			__hx_this.maglev.register("Persistence.AddGetter", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_35__Fun(_gthis)));
-			#line 54 "/my-component/src/persistence/Persistence.hx"
-			__hx_this.maglev.register("Persistence.Mutate", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_54__Fun(_gthis)));
-			#line 64 "/my-component/src/persistence/Persistence.hx"
-			__hx_this.maglev.register("Persistence.Get", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_64__Fun(_gthis)));
+			#line 22 "/my-component/src/persistence/Persistence.hx"
+			__hx_this.maglev.register("Persistence.AddMutator", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_22__Fun(_gthis)));
+			#line 37 "/my-component/src/persistence/Persistence.hx"
+			__hx_this.maglev.register("Persistence.AddGetter", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_37__Fun(_gthis)));
+			#line 56 "/my-component/src/persistence/Persistence.hx"
+			__hx_this.maglev.register("Persistence.Mutate", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_56__Fun(_gthis)));
+			#line 66 "/my-component/src/persistence/Persistence.hx"
+			__hx_this.maglev.register("Persistence.Get", global::maglev.MagLevFunction.fromFunction(new global::persistence.Persistence___hx_ctor_persistence_Persistence_66__Fun(_gthis)));
 		}
 		#line default
 		
@@ -61,60 +61,60 @@ namespace persistence {
 		public global::maglev.MagLev maglev;
 		
 		public virtual void addMutator(string recordType, string operationName, object strategyMethod, object updateMapper, global::haxe.lang.Null<bool> useRecordDataAsParams) {
-			#line 77 "/my-component/src/persistence/Persistence.hx"
+			#line 79 "/my-component/src/persistence/Persistence.hx"
 			if (( updateMapper == null )) {
-				#line 78 "/my-component/src/persistence/Persistence.hx"
-				updateMapper = ((object) (( (( global::persistence.Persistence_addMutator_78__Fun.__hx_current != null )) ? (global::persistence.Persistence_addMutator_78__Fun.__hx_current) : (global::persistence.Persistence_addMutator_78__Fun.__hx_current = ((global::persistence.Persistence_addMutator_78__Fun) (new global::persistence.Persistence_addMutator_78__Fun()) )) )) );
+				#line 80 "/my-component/src/persistence/Persistence.hx"
+				updateMapper = ((object) (( (( global::persistence.Persistence_addMutator_80__Fun.__hx_current != null )) ? (global::persistence.Persistence_addMutator_80__Fun.__hx_current) : (global::persistence.Persistence_addMutator_80__Fun.__hx_current = ((global::persistence.Persistence_addMutator_80__Fun) (new global::persistence.Persistence_addMutator_80__Fun()) )) )) );
 			}
 			
-			#line 80 "/my-component/src/persistence/Persistence.hx"
+			#line 82 "/my-component/src/persistence/Persistence.hx"
 			if ( ! (useRecordDataAsParams.hasValue) ) {
-				#line 81 "/my-component/src/persistence/Persistence.hx"
+				#line 83 "/my-component/src/persistence/Persistence.hx"
 				useRecordDataAsParams = new global::haxe.lang.Null<bool>(false, true);
 			}
 			
-			#line 83 "/my-component/src/persistence/Persistence.hx"
+			#line 85 "/my-component/src/persistence/Persistence.hx"
 			global::persistence._Persistence.Mutator mutator = new global::persistence._Persistence.Mutator(recordType, strategyMethod, updateMapper, (useRecordDataAsParams).@value);
 			((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((global::haxe.IMap<string, object>) (this.mutators) )) ))) ).@set(this.calcKey(recordType, operationName), mutator);
 		}
 		#line default
 		
 		public virtual void addGetter(string recordType, string operationName, object strategyMethod, object queryMapper, object resultMapper, global::haxe.lang.Null<bool> useQueryValuesAsParams) {
-			#line 88 "/my-component/src/persistence/Persistence.hx"
+			#line 90 "/my-component/src/persistence/Persistence.hx"
 			if (( queryMapper == null )) {
-				#line 89 "/my-component/src/persistence/Persistence.hx"
-				queryMapper = ((object) (( (( global::persistence.Persistence_addGetter_89__Fun.__hx_current != null )) ? (global::persistence.Persistence_addGetter_89__Fun.__hx_current) : (global::persistence.Persistence_addGetter_89__Fun.__hx_current = ((global::persistence.Persistence_addGetter_89__Fun) (new global::persistence.Persistence_addGetter_89__Fun()) )) )) );
+				#line 91 "/my-component/src/persistence/Persistence.hx"
+				queryMapper = ((object) (( (( global::persistence.Persistence_addGetter_91__Fun.__hx_current != null )) ? (global::persistence.Persistence_addGetter_91__Fun.__hx_current) : (global::persistence.Persistence_addGetter_91__Fun.__hx_current = ((global::persistence.Persistence_addGetter_91__Fun) (new global::persistence.Persistence_addGetter_91__Fun()) )) )) );
 			}
 			
-			#line 91 "/my-component/src/persistence/Persistence.hx"
+			#line 93 "/my-component/src/persistence/Persistence.hx"
 			if (( resultMapper == null )) {
-				#line 92 "/my-component/src/persistence/Persistence.hx"
-				resultMapper = ((object) (( (( global::persistence.Persistence_addGetter_92__Fun.__hx_current != null )) ? (global::persistence.Persistence_addGetter_92__Fun.__hx_current) : (global::persistence.Persistence_addGetter_92__Fun.__hx_current = ((global::persistence.Persistence_addGetter_92__Fun) (new global::persistence.Persistence_addGetter_92__Fun()) )) )) );
+				#line 94 "/my-component/src/persistence/Persistence.hx"
+				resultMapper = ((object) (( (( global::persistence.Persistence_addGetter_94__Fun.__hx_current != null )) ? (global::persistence.Persistence_addGetter_94__Fun.__hx_current) : (global::persistence.Persistence_addGetter_94__Fun.__hx_current = ((global::persistence.Persistence_addGetter_94__Fun) (new global::persistence.Persistence_addGetter_94__Fun()) )) )) );
 			}
 			
-			#line 94 "/my-component/src/persistence/Persistence.hx"
+			#line 96 "/my-component/src/persistence/Persistence.hx"
 			if ( ! (useQueryValuesAsParams.hasValue) ) {
-				#line 95 "/my-component/src/persistence/Persistence.hx"
+				#line 97 "/my-component/src/persistence/Persistence.hx"
 				useQueryValuesAsParams = new global::haxe.lang.Null<bool>(false, true);
 			}
 			
-			#line 97 "/my-component/src/persistence/Persistence.hx"
+			#line 99 "/my-component/src/persistence/Persistence.hx"
 			global::persistence._Persistence.Getter getter = new global::persistence._Persistence.Getter(recordType, strategyMethod, queryMapper, resultMapper, (useQueryValuesAsParams).@value);
 			((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((global::haxe.IMap<string, object>) (this.getters) )) ))) ).@set(this.calcKey(recordType, operationName), getter);
 		}
 		#line default
 		
 		public virtual void mutate(string recordType, string operationName, object recordData, global::haxe.lang.Function callback) {
-			#line 101 "/my-component/src/persistence/Persistence.hx"
+			#line 103 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence _gthis = this;
-			#line 104 "/my-component/src/persistence/Persistence.hx"
+			#line 106 "/my-component/src/persistence/Persistence.hx"
 			if (((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((global::haxe.IMap<string, object>) (this.mutators) )) ))) ).exists(this.calcKey(recordType, operationName))) {
-				#line 105 "/my-component/src/persistence/Persistence.hx"
+				#line 107 "/my-component/src/persistence/Persistence.hx"
 				global::persistence._Persistence.Mutator mutator = ((global::persistence._Persistence.Mutator) ((((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((global::haxe.IMap<string, object>) (this.mutators) )) ))) ).@get(this.calcKey(recordType, operationName))).@value) );
-				this.mapUpdate(mutator, recordData, new global::persistence.Persistence_mutate_106__Fun(mutator, callback, _gthis));
+				this.mapUpdate(mutator, recordData, new global::persistence.Persistence_mutate_108__Fun(mutator, callback, _gthis));
 			}
 			else {
-				#line 113 "/my-component/src/persistence/Persistence.hx"
+				#line 115 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("the specified mutator has not been added")) );
 			}
 			
@@ -122,16 +122,16 @@ namespace persistence {
 		#line default
 		
 		public virtual void @get(string recordType, string operationName, object queryValues, global::haxe.lang.Function callback) {
-			#line 117 "/my-component/src/persistence/Persistence.hx"
+			#line 119 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence _gthis = this;
 			if (((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((global::haxe.IMap<string, object>) (this.getters) )) ))) ).exists(this.calcKey(recordType, operationName))) {
-				#line 119 "/my-component/src/persistence/Persistence.hx"
-				global::persistence._Persistence.Getter getter = ((global::persistence._Persistence.Getter) ((((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((global::haxe.IMap<string, object>) (this.getters) )) ))) ).@get(this.calcKey(recordType, operationName))).@value) );
 				#line 121 "/my-component/src/persistence/Persistence.hx"
-				this.mapQuery(getter, queryValues, new global::persistence.Persistence_get_121__Fun(getter, callback, _gthis));
+				global::persistence._Persistence.Getter getter = ((global::persistence._Persistence.Getter) ((((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (((global::haxe.IMap<string, object>) (this.getters) )) ))) ).@get(this.calcKey(recordType, operationName))).@value) );
+				#line 123 "/my-component/src/persistence/Persistence.hx"
+				this.mapQuery(getter, queryValues, new global::persistence.Persistence_get_123__Fun(getter, callback, _gthis));
 			}
 			else {
-				#line 130 "/my-component/src/persistence/Persistence.hx"
+				#line 132 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("the specified getter has not been added")) );
 			}
 			
@@ -139,45 +139,43 @@ namespace persistence {
 		#line default
 		
 		public virtual string calcKey(string recordType, string operationName) {
-			#line 135 "/my-component/src/persistence/Persistence.hx"
+			#line 137 "/my-component/src/persistence/Persistence.hx"
 			return global::haxe.lang.Runtime.concat(global::haxe.lang.Runtime.concat(recordType, "."), operationName);
 		}
 		#line default
 		
 		public virtual object convertToHaxe(global::maglev.MagLevAny x) {
-			#line 139 "/my-component/src/persistence/Persistence.hx"
+			#line 141 "/my-component/src/persistence/Persistence.hx"
 			return global::persistence.MagLevConverter.convertToHaxe(x);
 		}
 		#line default
 		
 		public virtual global::maglev.MagLevAny convertToMagLev(object x) {
-			#line 143 "/my-component/src/persistence/Persistence.hx"
+			#line 145 "/my-component/src/persistence/Persistence.hx"
 			return global::persistence.MagLevConverter.convertToMagLev(x);
 		}
 		#line default
 		
 		public virtual void mapUpdate(global::persistence._Persistence.Mutator mutator, object recordData, global::haxe.lang.Function callback) {
-			#line 146 "/my-component/src/persistence/Persistence.hx"
-			global::persistence.Persistence _gthis = this;
 			#line 148 "/my-component/src/persistence/Persistence.hx"
+			global::persistence.Persistence _gthis = this;
+			#line 150 "/my-component/src/persistence/Persistence.hx"
 			if (( ((object) (mutator.updateMapper) ) is global::haxe.lang.Function )) {
-				#line 149 "/my-component/src/persistence/Persistence.hx"
-				global::haxe.lang.Function updateMapper = ((global::haxe.lang.Function) (((object) (mutator.updateMapper) )) );
-				object @params = ((object) (updateMapper.__hx_invoke1_o(default(double), recordData)) );
 				#line 151 "/my-component/src/persistence/Persistence.hx"
-				callback.__hx_invoke1_o(default(double), @params);
+				global::haxe.lang.Function updateMapper = ((global::haxe.lang.Function) (((object) (mutator.updateMapper) )) );
+				updateMapper.__hx_invoke2_o(default(double), recordData, default(double), new global::persistence.Persistence_mapUpdate_152__Fun(callback));
 			}
 			else if (global::Std.isOfType(((object) (mutator.updateMapper) ), ((object) (typeof(string)) ))) {
-				#line 154 "/my-component/src/persistence/Persistence.hx"
+				#line 157 "/my-component/src/persistence/Persistence.hx"
 				string updateMapper1 = global::haxe.lang.Runtime.toString(((object) (mutator.updateMapper) ));
-				#line 156 "/my-component/src/persistence/Persistence.hx"
+				#line 159 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevResult ret = this.maglev.call(updateMapper1, ((global::maglev.MagLevArray) (this.convertToMagLev(((object) (new global::Array<object>(new object[]{recordData})) ))) ));
-				ret.onError(( (( global::persistence.Persistence_mapUpdate_157__Fun.__hx_current != null )) ? (global::persistence.Persistence_mapUpdate_157__Fun.__hx_current) : (global::persistence.Persistence_mapUpdate_157__Fun.__hx_current = ((global::persistence.Persistence_mapUpdate_157__Fun) (new global::persistence.Persistence_mapUpdate_157__Fun()) )) ));
-				#line 160 "/my-component/src/persistence/Persistence.hx"
-				ret.onResult(new global::persistence.Persistence_mapUpdate_160__Fun(callback, _gthis));
+				ret.onError(( (( global::persistence.Persistence_mapUpdate_160__Fun.__hx_current != null )) ? (global::persistence.Persistence_mapUpdate_160__Fun.__hx_current) : (global::persistence.Persistence_mapUpdate_160__Fun.__hx_current = ((global::persistence.Persistence_mapUpdate_160__Fun) (new global::persistence.Persistence_mapUpdate_160__Fun()) )) ));
+				#line 163 "/my-component/src/persistence/Persistence.hx"
+				ret.onResult(new global::persistence.Persistence_mapUpdate_163__Fun(callback, _gthis));
 			}
 			else {
-				#line 166 "/my-component/src/persistence/Persistence.hx"
+				#line 169 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("updateMapper must be a string or function")) );
 			}
 			
@@ -185,37 +183,35 @@ namespace persistence {
 		#line default
 		
 		public virtual void update(global::persistence._Persistence.Mutator mutator, object recordData, global::haxe.lang.Function callback) {
-			#line 170 "/my-component/src/persistence/Persistence.hx"
+			#line 173 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence _gthis = this;
-			#line 172 "/my-component/src/persistence/Persistence.hx"
+			#line 175 "/my-component/src/persistence/Persistence.hx"
 			if (( ((object) (mutator.strategyMethod) ) is global::haxe.lang.Function )) {
-				#line 173 "/my-component/src/persistence/Persistence.hx"
+				#line 176 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Function strategyMethod = ((global::haxe.lang.Function) (((object) (mutator.strategyMethod) )) );
-				object raw_result = ((object) (strategyMethod.__hx_invoke1_o(default(double), recordData)) );
-				#line 175 "/my-component/src/persistence/Persistence.hx"
-				callback.__hx_invoke1_o(default(double), raw_result);
+				strategyMethod.__hx_invoke2_o(default(double), recordData, default(double), new global::persistence.Persistence_update_177__Fun(callback));
 			}
 			else if (global::Std.isOfType(((object) (mutator.strategyMethod) ), ((object) (typeof(string)) ))) {
-				#line 178 "/my-component/src/persistence/Persistence.hx"
+				#line 182 "/my-component/src/persistence/Persistence.hx"
 				string strategyMethod1 = global::haxe.lang.Runtime.toString(((object) (mutator.strategyMethod) ));
 				global::maglev.MagLevResult raw_maglev_result = null;
-				#line 180 "/my-component/src/persistence/Persistence.hx"
+				#line 184 "/my-component/src/persistence/Persistence.hx"
 				if (mutator.useRecordDataAsParams) {
-					#line 181 "/my-component/src/persistence/Persistence.hx"
+					#line 185 "/my-component/src/persistence/Persistence.hx"
 					raw_maglev_result = this.maglev.call(strategyMethod1, ((global::maglev.MagLevArray) (this.convertToMagLev(recordData)) ));
 				}
 				else {
-					#line 183 "/my-component/src/persistence/Persistence.hx"
+					#line 187 "/my-component/src/persistence/Persistence.hx"
 					raw_maglev_result = this.maglev.call(strategyMethod1, ((global::maglev.MagLevArray) (this.convertToMagLev(((object) (new global::Array<object>(new object[]{recordData})) ))) ));
 				}
 				
-				#line 185 "/my-component/src/persistence/Persistence.hx"
-				raw_maglev_result.onError(( (( global::persistence.Persistence_update_185__Fun.__hx_current != null )) ? (global::persistence.Persistence_update_185__Fun.__hx_current) : (global::persistence.Persistence_update_185__Fun.__hx_current = ((global::persistence.Persistence_update_185__Fun) (new global::persistence.Persistence_update_185__Fun()) )) ));
-				#line 188 "/my-component/src/persistence/Persistence.hx"
-				raw_maglev_result.onResult(new global::persistence.Persistence_update_188__Fun(callback, _gthis));
+				#line 189 "/my-component/src/persistence/Persistence.hx"
+				raw_maglev_result.onError(( (( global::persistence.Persistence_update_189__Fun.__hx_current != null )) ? (global::persistence.Persistence_update_189__Fun.__hx_current) : (global::persistence.Persistence_update_189__Fun.__hx_current = ((global::persistence.Persistence_update_189__Fun) (new global::persistence.Persistence_update_189__Fun()) )) ));
+				#line 192 "/my-component/src/persistence/Persistence.hx"
+				raw_maglev_result.onResult(new global::persistence.Persistence_update_192__Fun(callback, _gthis));
 			}
 			else {
-				#line 194 "/my-component/src/persistence/Persistence.hx"
+				#line 198 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("strategyMethod must be a string or function")) );
 			}
 			
@@ -223,25 +219,25 @@ namespace persistence {
 		#line default
 		
 		public virtual void mapQuery(global::persistence._Persistence.Getter getter, object queryValues, global::haxe.lang.Function callback) {
-			#line 198 "/my-component/src/persistence/Persistence.hx"
+			#line 202 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence _gthis = this;
-			#line 200 "/my-component/src/persistence/Persistence.hx"
+			#line 204 "/my-component/src/persistence/Persistence.hx"
 			if (( ((object) (getter.queryMapper) ) is global::haxe.lang.Function )) {
-				#line 201 "/my-component/src/persistence/Persistence.hx"
+				#line 205 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Function queryMapper = ((global::haxe.lang.Function) (((object) (getter.queryMapper) )) );
-				callback.__hx_invoke1_o(default(double), ((object) (queryMapper.__hx_invoke1_o(default(double), queryValues)) ));
+				queryMapper.__hx_invoke2_o(default(double), queryValues, default(double), new global::persistence.Persistence_mapQuery_206__Fun(callback));
 			}
 			else if (global::Std.isOfType(((object) (getter.queryMapper) ), ((object) (typeof(string)) ))) {
-				#line 205 "/my-component/src/persistence/Persistence.hx"
-				string queryMapper1 = global::haxe.lang.Runtime.toString(((object) (getter.queryMapper) ));
-				#line 207 "/my-component/src/persistence/Persistence.hx"
-				global::maglev.MagLevResult ret = this.maglev.call(queryMapper1, ((global::maglev.MagLevArray) (this.convertToMagLev(((object) (new global::Array<object>(new object[]{queryValues})) ))) ));
-				ret.onError(( (( global::persistence.Persistence_mapQuery_208__Fun.__hx_current != null )) ? (global::persistence.Persistence_mapQuery_208__Fun.__hx_current) : (global::persistence.Persistence_mapQuery_208__Fun.__hx_current = ((global::persistence.Persistence_mapQuery_208__Fun) (new global::persistence.Persistence_mapQuery_208__Fun()) )) ));
 				#line 211 "/my-component/src/persistence/Persistence.hx"
-				ret.onResult(new global::persistence.Persistence_mapQuery_211__Fun(callback, _gthis));
+				string queryMapper1 = global::haxe.lang.Runtime.toString(((object) (getter.queryMapper) ));
+				#line 213 "/my-component/src/persistence/Persistence.hx"
+				global::maglev.MagLevResult ret = this.maglev.call(queryMapper1, ((global::maglev.MagLevArray) (this.convertToMagLev(((object) (new global::Array<object>(new object[]{queryValues})) ))) ));
+				ret.onError(( (( global::persistence.Persistence_mapQuery_214__Fun.__hx_current != null )) ? (global::persistence.Persistence_mapQuery_214__Fun.__hx_current) : (global::persistence.Persistence_mapQuery_214__Fun.__hx_current = ((global::persistence.Persistence_mapQuery_214__Fun) (new global::persistence.Persistence_mapQuery_214__Fun()) )) ));
+				#line 217 "/my-component/src/persistence/Persistence.hx"
+				ret.onResult(new global::persistence.Persistence_mapQuery_217__Fun(callback, _gthis));
 			}
 			else {
-				#line 217 "/my-component/src/persistence/Persistence.hx"
+				#line 223 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("queryMapper must be a string or function")) );
 			}
 			
@@ -249,36 +245,36 @@ namespace persistence {
 		#line default
 		
 		public virtual void query(global::persistence._Persistence.Getter getter, object queryValues, global::haxe.lang.Function callback) {
-			#line 221 "/my-component/src/persistence/Persistence.hx"
+			#line 227 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence _gthis = this;
-			#line 223 "/my-component/src/persistence/Persistence.hx"
+			#line 229 "/my-component/src/persistence/Persistence.hx"
 			object raw_result = null;
 			if (( ((object) (getter.strategyMethod) ) is global::haxe.lang.Function )) {
-				#line 225 "/my-component/src/persistence/Persistence.hx"
+				#line 231 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Function strategyMethod = ((global::haxe.lang.Function) (((object) (getter.strategyMethod) )) );
-				callback.__hx_invoke1_o(default(double), ((object) (strategyMethod.__hx_invoke1_o(default(double), queryValues)) ));
+				strategyMethod.__hx_invoke2_o(default(double), queryValues, default(double), new global::persistence.Persistence_query_232__Fun(callback));
 			}
 			else if (global::Std.isOfType(((object) (getter.strategyMethod) ), ((object) (typeof(string)) ))) {
-				#line 229 "/my-component/src/persistence/Persistence.hx"
+				#line 237 "/my-component/src/persistence/Persistence.hx"
 				string strategyMethod1 = global::haxe.lang.Runtime.toString(((object) (getter.strategyMethod) ));
 				global::maglev.MagLevResult raw_maglev_result = null;
-				#line 231 "/my-component/src/persistence/Persistence.hx"
+				#line 239 "/my-component/src/persistence/Persistence.hx"
 				if (getter.useQueryValuesAsParams) {
-					#line 232 "/my-component/src/persistence/Persistence.hx"
+					#line 240 "/my-component/src/persistence/Persistence.hx"
 					raw_maglev_result = this.maglev.call(global::haxe.lang.Runtime.toString(((object) (getter.strategyMethod) )), ((global::maglev.MagLevArray) (this.convertToMagLev(queryValues)) ));
 				}
 				else {
-					#line 234 "/my-component/src/persistence/Persistence.hx"
+					#line 242 "/my-component/src/persistence/Persistence.hx"
 					raw_maglev_result = this.maglev.call(global::haxe.lang.Runtime.toString(((object) (getter.strategyMethod) )), ((global::maglev.MagLevArray) (this.convertToMagLev(((object) (new global::Array<object>(new object[]{queryValues})) ))) ));
 				}
 				
-				#line 236 "/my-component/src/persistence/Persistence.hx"
-				raw_maglev_result.onError(( (( global::persistence.Persistence_query_236__Fun.__hx_current != null )) ? (global::persistence.Persistence_query_236__Fun.__hx_current) : (global::persistence.Persistence_query_236__Fun.__hx_current = ((global::persistence.Persistence_query_236__Fun) (new global::persistence.Persistence_query_236__Fun()) )) ));
-				#line 239 "/my-component/src/persistence/Persistence.hx"
-				raw_maglev_result.onResult(new global::persistence.Persistence_query_239__Fun(callback, _gthis));
+				#line 244 "/my-component/src/persistence/Persistence.hx"
+				raw_maglev_result.onError(( (( global::persistence.Persistence_query_244__Fun.__hx_current != null )) ? (global::persistence.Persistence_query_244__Fun.__hx_current) : (global::persistence.Persistence_query_244__Fun.__hx_current = ((global::persistence.Persistence_query_244__Fun) (new global::persistence.Persistence_query_244__Fun()) )) ));
+				#line 247 "/my-component/src/persistence/Persistence.hx"
+				raw_maglev_result.onResult(new global::persistence.Persistence_query_247__Fun(callback, _gthis));
 			}
 			else {
-				#line 245 "/my-component/src/persistence/Persistence.hx"
+				#line 253 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("strategyMethod must be a string or function")) );
 			}
 			
@@ -286,25 +282,25 @@ namespace persistence {
 		#line default
 		
 		public virtual void mapResults(global::persistence._Persistence.Getter getter, object queryResults, global::haxe.lang.Function callback) {
-			#line 249 "/my-component/src/persistence/Persistence.hx"
+			#line 257 "/my-component/src/persistence/Persistence.hx"
 			global::persistence.Persistence _gthis = this;
-			#line 251 "/my-component/src/persistence/Persistence.hx"
+			#line 259 "/my-component/src/persistence/Persistence.hx"
 			if (( ((object) (getter.resultMapper) ) is global::haxe.lang.Function )) {
-				#line 252 "/my-component/src/persistence/Persistence.hx"
+				#line 260 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Function resultMapper = ((global::haxe.lang.Function) (((object) (getter.resultMapper) )) );
-				callback.__hx_invoke1_o(default(double), ((object) (resultMapper.__hx_invoke1_o(default(double), queryResults)) ));
+				resultMapper.__hx_invoke2_o(default(double), queryResults, default(double), new global::persistence.Persistence_mapResults_261__Fun(callback));
 			}
 			else if (global::Std.isOfType(((object) (getter.resultMapper) ), ((object) (typeof(string)) ))) {
-				#line 256 "/my-component/src/persistence/Persistence.hx"
+				#line 266 "/my-component/src/persistence/Persistence.hx"
 				string resultMapper1 = global::haxe.lang.Runtime.toString(((object) (getter.resultMapper) ));
-				#line 258 "/my-component/src/persistence/Persistence.hx"
+				#line 268 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevResult maglev_result = this.maglev.call(resultMapper1, ((global::maglev.MagLevArray) (this.convertToMagLev(((object) (new global::Array<object>(new object[]{queryResults})) ))) ));
-				maglev_result.onError(( (( global::persistence.Persistence_mapResults_259__Fun.__hx_current != null )) ? (global::persistence.Persistence_mapResults_259__Fun.__hx_current) : (global::persistence.Persistence_mapResults_259__Fun.__hx_current = ((global::persistence.Persistence_mapResults_259__Fun) (new global::persistence.Persistence_mapResults_259__Fun()) )) ));
-				#line 262 "/my-component/src/persistence/Persistence.hx"
-				maglev_result.onResult(new global::persistence.Persistence_mapResults_262__Fun(callback, _gthis));
+				maglev_result.onError(( (( global::persistence.Persistence_mapResults_269__Fun.__hx_current != null )) ? (global::persistence.Persistence_mapResults_269__Fun.__hx_current) : (global::persistence.Persistence_mapResults_269__Fun.__hx_current = ((global::persistence.Persistence_mapResults_269__Fun) (new global::persistence.Persistence_mapResults_269__Fun()) )) ));
+				#line 272 "/my-component/src/persistence/Persistence.hx"
+				maglev_result.onResult(new global::persistence.Persistence_mapResults_272__Fun(callback, _gthis));
 			}
 			else {
-				#line 268 "/my-component/src/persistence/Persistence.hx"
+				#line 278 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("resultMapper must be a string or function")) );
 			}
 			
@@ -313,38 +309,38 @@ namespace persistence {
 		
 		public override object __hx_setField(string field, int hash, object @value, bool handleProperties) {
 			unchecked {
-				#line 10 "/my-component/src/persistence/Persistence.hx"
+				#line 12 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 858513194:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.maglev = ((global::maglev.MagLev) (@value) );
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 883116808:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.getters = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (@value) ))) );
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1678728017:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.mutators = ((global::haxe.ds.StringMap<object>) (global::haxe.ds.StringMap<object>.__hx_cast<object>(((global::haxe.ds.StringMap) (@value) ))) );
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					default:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_setField(field, hash, @value, handleProperties);
 					}
 					
@@ -357,116 +353,116 @@ namespace persistence {
 		
 		public override object __hx_getField(string field, int hash, bool throwErrors, bool isCheck, bool handleProperties) {
 			unchecked {
-				#line 10 "/my-component/src/persistence/Persistence.hx"
+				#line 12 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 199770554:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "mapResults", 199770554)) );
 					}
 					
 					
 					case 1575652104:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "query", 1575652104)) );
 					}
 					
 					
 					case 1429011148:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "mapQuery", 1429011148)) );
 					}
 					
 					
 					case 117802505:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "update", 117802505)) );
 					}
 					
 					
 					case 1776607685:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "mapUpdate", 1776607685)) );
 					}
 					
 					
 					case 263824376:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "convertToMagLev", 263824376)) );
 					}
 					
 					
 					case 907774356:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "convertToHaxe", 907774356)) );
 					}
 					
 					
 					case 1314583562:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "calcKey", 1314583562)) );
 					}
 					
 					
 					case 5144726:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "get", 5144726)) );
 					}
 					
 					
 					case 1069478790:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "mutate", 1069478790)) );
 					}
 					
 					
 					case 1533285388:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "addGetter", 1533285388)) );
 					}
 					
 					
 					case 1860196033:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return ((global::haxe.lang.Function) (new global::haxe.lang.Closure(this, "addMutator", 1860196033)) );
 					}
 					
 					
 					case 858513194:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return this.maglev;
 					}
 					
 					
 					case 883116808:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return this.getters;
 					}
 					
 					
 					case 1678728017:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return this.mutators;
 					}
 					
 					
 					default:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_getField(field, hash, throwErrors, isCheck, handleProperties);
 					}
 					
@@ -479,119 +475,119 @@ namespace persistence {
 		
 		public override object __hx_invokeField(string field, int hash, object[] dynargs) {
 			unchecked {
-				#line 10 "/my-component/src/persistence/Persistence.hx"
+				#line 12 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 199770554:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.mapResults(((global::persistence._Persistence.Getter) (dynargs[0]) ), dynargs[1], ((global::haxe.lang.Function) (dynargs[2]) ));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 1575652104:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.query(((global::persistence._Persistence.Getter) (dynargs[0]) ), dynargs[1], ((global::haxe.lang.Function) (dynargs[2]) ));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 1429011148:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.mapQuery(((global::persistence._Persistence.Getter) (dynargs[0]) ), dynargs[1], ((global::haxe.lang.Function) (dynargs[2]) ));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 117802505:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.update(((global::persistence._Persistence.Mutator) (dynargs[0]) ), dynargs[1], ((global::haxe.lang.Function) (dynargs[2]) ));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 1776607685:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.mapUpdate(((global::persistence._Persistence.Mutator) (dynargs[0]) ), dynargs[1], ((global::haxe.lang.Function) (dynargs[2]) ));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 263824376:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return this.convertToMagLev(dynargs[0]);
 					}
 					
 					
 					case 907774356:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return this.convertToHaxe(((global::maglev.MagLevAny) (dynargs[0]) ));
 					}
 					
 					
 					case 1314583562:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return this.calcKey(global::haxe.lang.Runtime.toString(dynargs[0]), global::haxe.lang.Runtime.toString(dynargs[1]));
 					}
 					
 					
 					case 5144726:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.@get(global::haxe.lang.Runtime.toString(dynargs[0]), global::haxe.lang.Runtime.toString(dynargs[1]), dynargs[2], ((global::haxe.lang.Function) (dynargs[3]) ));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 1069478790:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.mutate(global::haxe.lang.Runtime.toString(dynargs[0]), global::haxe.lang.Runtime.toString(dynargs[1]), dynargs[2], ((global::haxe.lang.Function) (dynargs[3]) ));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 1533285388:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.addGetter(global::haxe.lang.Runtime.toString(dynargs[0]), global::haxe.lang.Runtime.toString(dynargs[1]), dynargs[2], ( (( dynargs.Length > 3 )) ? (dynargs[3]) : (null) ), ( (( dynargs.Length > 4 )) ? (dynargs[4]) : (null) ), global::haxe.lang.Null<object>.ofDynamic<bool>(( (( dynargs.Length > 5 )) ? (dynargs[5]) : (null) )));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					case 1860196033:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						this.addMutator(global::haxe.lang.Runtime.toString(dynargs[0]), global::haxe.lang.Runtime.toString(dynargs[1]), dynargs[2], ( (( dynargs.Length > 3 )) ? (dynargs[3]) : (null) ), global::haxe.lang.Null<object>.ofDynamic<bool>(( (( dynargs.Length > 4 )) ? (dynargs[4]) : (null) )));
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						break;
 					}
 					
 					
 					default:
 					{
-						#line 10 "/my-component/src/persistence/Persistence.hx"
+						#line 12 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_invokeField(field, hash, dynargs);
 					}
 					
 				}
 				
-				#line 10 "/my-component/src/persistence/Persistence.hx"
+				#line 12 "/my-component/src/persistence/Persistence.hx"
 				return null;
 			}
 			#line default
@@ -599,13 +595,13 @@ namespace persistence {
 		
 		
 		public override void __hx_getFields(global::Array<string> baseArr) {
-			#line 10 "/my-component/src/persistence/Persistence.hx"
+			#line 12 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("maglev");
-			#line 10 "/my-component/src/persistence/Persistence.hx"
+			#line 12 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("getters");
-			#line 10 "/my-component/src/persistence/Persistence.hx"
+			#line 12 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("mutators");
-			#line 10 "/my-component/src/persistence/Persistence.hx"
+			#line 12 "/my-component/src/persistence/Persistence.hx"
 			base.__hx_getFields(baseArr);
 		}
 		#line default
@@ -617,19 +613,23 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_addMutator_78__Fun : global::haxe.lang.Function {
+	public class Persistence_addMutator_80__Fun : global::haxe.lang.Function {
 		
-		public Persistence_addMutator_78__Fun() : base(1, 0) {
+		public Persistence_addMutator_80__Fun() : base(2, 0) {
 		}
 		
 		
-		public static global::persistence.Persistence_addMutator_78__Fun __hx_current;
+		public static global::persistence.Persistence_addMutator_80__Fun __hx_current;
 		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 78 "/my-component/src/persistence/Persistence.hx"
+		public override object __hx_invoke2_o(double __fn_float1, object __fn_dyn1, double __fn_float2, object __fn_dyn2) {
+			#line 80 "/my-component/src/persistence/Persistence.hx"
+			global::haxe.lang.Function cb = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::haxe.lang.Function) (((object) (__fn_float2) )) )) : (((global::haxe.lang.Function) (__fn_dyn2) )) );
+			#line 80 "/my-component/src/persistence/Persistence.hx"
 			object v = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-			#line 78 "/my-component/src/persistence/Persistence.hx"
-			return v;
+			#line 80 "/my-component/src/persistence/Persistence.hx"
+			cb.__hx_invoke1_o(default(double), v);
+			#line 80 "/my-component/src/persistence/Persistence.hx"
+			return null;
 		}
 		#line default
 		
@@ -640,19 +640,23 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_addGetter_89__Fun : global::haxe.lang.Function {
+	public class Persistence_addGetter_91__Fun : global::haxe.lang.Function {
 		
-		public Persistence_addGetter_89__Fun() : base(1, 0) {
+		public Persistence_addGetter_91__Fun() : base(2, 0) {
 		}
 		
 		
-		public static global::persistence.Persistence_addGetter_89__Fun __hx_current;
+		public static global::persistence.Persistence_addGetter_91__Fun __hx_current;
 		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 89 "/my-component/src/persistence/Persistence.hx"
+		public override object __hx_invoke2_o(double __fn_float1, object __fn_dyn1, double __fn_float2, object __fn_dyn2) {
+			#line 91 "/my-component/src/persistence/Persistence.hx"
+			global::haxe.lang.Function cb = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::haxe.lang.Function) (((object) (__fn_float2) )) )) : (((global::haxe.lang.Function) (__fn_dyn2) )) );
+			#line 91 "/my-component/src/persistence/Persistence.hx"
 			object v = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-			#line 89 "/my-component/src/persistence/Persistence.hx"
-			return v;
+			#line 91 "/my-component/src/persistence/Persistence.hx"
+			cb.__hx_invoke1_o(default(double), v);
+			#line 91 "/my-component/src/persistence/Persistence.hx"
+			return null;
 		}
 		#line default
 		
@@ -663,19 +667,23 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_addGetter_92__Fun : global::haxe.lang.Function {
+	public class Persistence_addGetter_94__Fun : global::haxe.lang.Function {
 		
-		public Persistence_addGetter_92__Fun() : base(1, 0) {
+		public Persistence_addGetter_94__Fun() : base(2, 0) {
 		}
 		
 		
-		public static global::persistence.Persistence_addGetter_92__Fun __hx_current;
+		public static global::persistence.Persistence_addGetter_94__Fun __hx_current;
 		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 92 "/my-component/src/persistence/Persistence.hx"
+		public override object __hx_invoke2_o(double __fn_float1, object __fn_dyn1, double __fn_float2, object __fn_dyn2) {
+			#line 94 "/my-component/src/persistence/Persistence.hx"
+			global::haxe.lang.Function cb = ( (( __fn_dyn2 == global::haxe.lang.Runtime.undefined )) ? (((global::haxe.lang.Function) (((object) (__fn_float2) )) )) : (((global::haxe.lang.Function) (__fn_dyn2) )) );
+			#line 94 "/my-component/src/persistence/Persistence.hx"
 			object v = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-			#line 92 "/my-component/src/persistence/Persistence.hx"
-			return v;
+			#line 94 "/my-component/src/persistence/Persistence.hx"
+			cb.__hx_invoke1_o(default(double), v);
+			#line 94 "/my-component/src/persistence/Persistence.hx"
+			return null;
 		}
 		#line default
 		
@@ -686,16 +694,16 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_mutate_107__Fun : global::haxe.lang.Function {
+	public class Persistence_mutate_109__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mutate_107__Fun(global::haxe.lang.Function callback) : base(1, 0) {
-			#line 108 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_mutate_109__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 110 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 107 "/my-component/src/persistence/Persistence.hx"
+			#line 109 "/my-component/src/persistence/Persistence.hx"
 			object updateResults = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
 			this.callback.__hx_invoke1_o(default(double), updateResults);
 			return null;
@@ -711,22 +719,22 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_mutate_106__Fun : global::haxe.lang.Function {
+	public class Persistence_mutate_108__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mutate_106__Fun(global::persistence._Persistence.Mutator mutator, global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 107 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_mutate_108__Fun(global::persistence._Persistence.Mutator mutator, global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 109 "/my-component/src/persistence/Persistence.hx"
 			this.mutator = mutator;
-			#line 107 "/my-component/src/persistence/Persistence.hx"
+			#line 109 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
-			#line 107 "/my-component/src/persistence/Persistence.hx"
+			#line 109 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 106 "/my-component/src/persistence/Persistence.hx"
+			#line 108 "/my-component/src/persistence/Persistence.hx"
 			object mappedRecordData = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-			this._gthis.update(this.mutator, mappedRecordData, new global::persistence.Persistence_mutate_107__Fun(this.callback));
+			this._gthis.update(this.mutator, mappedRecordData, new global::persistence.Persistence_mutate_109__Fun(this.callback));
 			return null;
 		}
 		#line default
@@ -744,16 +752,16 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_get_123__Fun : global::haxe.lang.Function {
+	public class Persistence_get_125__Fun : global::haxe.lang.Function {
 		
-		public Persistence_get_123__Fun(global::haxe.lang.Function callback) : base(1, 0) {
-			#line 124 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_get_125__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 126 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 123 "/my-component/src/persistence/Persistence.hx"
+			#line 125 "/my-component/src/persistence/Persistence.hx"
 			object mappedQueryValues = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
 			this.callback.__hx_invoke1_o(default(double), mappedQueryValues);
 			return null;
@@ -769,22 +777,22 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_get_122__Fun : global::haxe.lang.Function {
+	public class Persistence_get_124__Fun : global::haxe.lang.Function {
 		
-		public Persistence_get_122__Fun(global::persistence._Persistence.Getter getter, global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 123 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_get_124__Fun(global::persistence._Persistence.Getter getter, global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 125 "/my-component/src/persistence/Persistence.hx"
 			this.getter = getter;
-			#line 123 "/my-component/src/persistence/Persistence.hx"
+			#line 125 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
-			#line 123 "/my-component/src/persistence/Persistence.hx"
+			#line 125 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 122 "/my-component/src/persistence/Persistence.hx"
+			#line 124 "/my-component/src/persistence/Persistence.hx"
 			object queryResults = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-			this._gthis.mapResults(this.getter, queryResults, new global::persistence.Persistence_get_123__Fun(this.callback));
+			this._gthis.mapResults(this.getter, queryResults, new global::persistence.Persistence_get_125__Fun(this.callback));
 			return null;
 		}
 		#line default
@@ -802,22 +810,22 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_get_121__Fun : global::haxe.lang.Function {
+	public class Persistence_get_123__Fun : global::haxe.lang.Function {
 		
-		public Persistence_get_121__Fun(global::persistence._Persistence.Getter getter, global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 122 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_get_123__Fun(global::persistence._Persistence.Getter getter, global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 124 "/my-component/src/persistence/Persistence.hx"
 			this.getter = getter;
-			#line 122 "/my-component/src/persistence/Persistence.hx"
+			#line 124 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
-			#line 122 "/my-component/src/persistence/Persistence.hx"
+			#line 124 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 121 "/my-component/src/persistence/Persistence.hx"
+			#line 123 "/my-component/src/persistence/Persistence.hx"
 			object mappedQueryValues = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
-			this._gthis.query(this.getter, mappedQueryValues, new global::persistence.Persistence_get_122__Fun(this.getter, this.callback, this._gthis));
+			this._gthis.query(this.getter, mappedQueryValues, new global::persistence.Persistence_get_124__Fun(this.getter, this.callback, this._gthis));
 			return null;
 		}
 		#line default
@@ -835,20 +843,23 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_mapUpdate_157__Fun : global::haxe.lang.Function {
+	public class Persistence_mapUpdate_152__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mapUpdate_157__Fun() : base(1, 0) {
-		}
-		
-		
-		public static global::persistence.Persistence_mapUpdate_157__Fun __hx_current;
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 157 "/my-component/src/persistence/Persistence.hx"
-			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
-			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
+		public Persistence_mapUpdate_152__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 153 "/my-component/src/persistence/Persistence.hx"
+			this.callback = callback;
 		}
 		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 152 "/my-component/src/persistence/Persistence.hx"
+			object @params = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), @params);
+			return null;
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
 		
 	}
 }
@@ -859,44 +870,14 @@ namespace persistence {
 namespace persistence {
 	public class Persistence_mapUpdate_160__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mapUpdate_160__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 160 "/my-component/src/persistence/Persistence.hx"
-			this.callback = callback;
-			#line 160 "/my-component/src/persistence/Persistence.hx"
-			this._gthis = _gthis;
+		public Persistence_mapUpdate_160__Fun() : base(1, 0) {
 		}
-		#line default
+		
+		
+		public static global::persistence.Persistence_mapUpdate_160__Fun __hx_current;
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			#line 160 "/my-component/src/persistence/Persistence.hx"
-			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
-			this.callback.__hx_invoke1_o(default(double), this._gthis.convertToHaxe(result));
-			#line 162 "/my-component/src/persistence/Persistence.hx"
-			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
-		}
-		#line default
-		
-		public global::haxe.lang.Function callback;
-		
-		public global::persistence.Persistence _gthis;
-		
-	}
-}
-
-
-
-#pragma warning disable 109, 114, 219, 429, 168, 162
-namespace persistence {
-	public class Persistence_update_185__Fun : global::haxe.lang.Function {
-		
-		public Persistence_update_185__Fun() : base(1, 0) {
-		}
-		
-		
-		public static global::persistence.Persistence_update_185__Fun __hx_current;
-		
-		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 185 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
 			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
 		}
@@ -909,21 +890,21 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_update_188__Fun : global::haxe.lang.Function {
+	public class Persistence_mapUpdate_163__Fun : global::haxe.lang.Function {
 		
-		public Persistence_update_188__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 188 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_mapUpdate_163__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 163 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
-			#line 188 "/my-component/src/persistence/Persistence.hx"
+			#line 163 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 188 "/my-component/src/persistence/Persistence.hx"
+			#line 163 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
 			this.callback.__hx_invoke1_o(default(double), this._gthis.convertToHaxe(result));
-			#line 190 "/my-component/src/persistence/Persistence.hx"
+			#line 165 "/my-component/src/persistence/Persistence.hx"
 			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
 		}
 		#line default
@@ -939,16 +920,41 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_mapQuery_208__Fun : global::haxe.lang.Function {
+	public class Persistence_update_177__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mapQuery_208__Fun() : base(1, 0) {
+		public Persistence_update_177__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 178 "/my-component/src/persistence/Persistence.hx"
+			this.callback = callback;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 177 "/my-component/src/persistence/Persistence.hx"
+			object raw_result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), raw_result);
+			return null;
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class Persistence_update_189__Fun : global::haxe.lang.Function {
+		
+		public Persistence_update_189__Fun() : base(1, 0) {
 		}
 		
 		
-		public static global::persistence.Persistence_mapQuery_208__Fun __hx_current;
+		public static global::persistence.Persistence_update_189__Fun __hx_current;
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 208 "/my-component/src/persistence/Persistence.hx"
+			#line 189 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
 			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
 		}
@@ -961,21 +967,21 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_mapQuery_211__Fun : global::haxe.lang.Function {
+	public class Persistence_update_192__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mapQuery_211__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 211 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_update_192__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 192 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
-			#line 211 "/my-component/src/persistence/Persistence.hx"
+			#line 192 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 211 "/my-component/src/persistence/Persistence.hx"
+			#line 192 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
 			this.callback.__hx_invoke1_o(default(double), this._gthis.convertToHaxe(result));
-			#line 213 "/my-component/src/persistence/Persistence.hx"
+			#line 194 "/my-component/src/persistence/Persistence.hx"
 			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
 		}
 		#line default
@@ -991,16 +997,41 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_query_236__Fun : global::haxe.lang.Function {
+	public class Persistence_mapQuery_206__Fun : global::haxe.lang.Function {
 		
-		public Persistence_query_236__Fun() : base(1, 0) {
+		public Persistence_mapQuery_206__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 207 "/my-component/src/persistence/Persistence.hx"
+			this.callback = callback;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 206 "/my-component/src/persistence/Persistence.hx"
+			object mappedQueryValues = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), mappedQueryValues);
+			return null;
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class Persistence_mapQuery_214__Fun : global::haxe.lang.Function {
+		
+		public Persistence_mapQuery_214__Fun() : base(1, 0) {
 		}
 		
 		
-		public static global::persistence.Persistence_query_236__Fun __hx_current;
+		public static global::persistence.Persistence_mapQuery_214__Fun __hx_current;
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 236 "/my-component/src/persistence/Persistence.hx"
+			#line 214 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
 			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
 		}
@@ -1013,21 +1044,21 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_query_239__Fun : global::haxe.lang.Function {
+	public class Persistence_mapQuery_217__Fun : global::haxe.lang.Function {
 		
-		public Persistence_query_239__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 239 "/my-component/src/persistence/Persistence.hx"
+		public Persistence_mapQuery_217__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 217 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
-			#line 239 "/my-component/src/persistence/Persistence.hx"
+			#line 217 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 239 "/my-component/src/persistence/Persistence.hx"
+			#line 217 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
 			this.callback.__hx_invoke1_o(default(double), this._gthis.convertToHaxe(result));
-			#line 241 "/my-component/src/persistence/Persistence.hx"
+			#line 219 "/my-component/src/persistence/Persistence.hx"
 			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
 		}
 		#line default
@@ -1043,16 +1074,41 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_mapResults_259__Fun : global::haxe.lang.Function {
+	public class Persistence_query_232__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mapResults_259__Fun() : base(1, 0) {
+		public Persistence_query_232__Fun(global::haxe.lang.Function callback) : base(1, 0) {
+			#line 233 "/my-component/src/persistence/Persistence.hx"
+			this.callback = callback;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 232 "/my-component/src/persistence/Persistence.hx"
+			object raw_result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), raw_result);
+			return null;
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class Persistence_query_244__Fun : global::haxe.lang.Function {
+		
+		public Persistence_query_244__Fun() : base(1, 0) {
 		}
 		
 		
-		public static global::persistence.Persistence_mapResults_259__Fun __hx_current;
+		public static global::persistence.Persistence_query_244__Fun __hx_current;
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 259 "/my-component/src/persistence/Persistence.hx"
+			#line 244 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
 			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
 		}
@@ -1065,21 +1121,98 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence_mapResults_262__Fun : global::haxe.lang.Function {
+	public class Persistence_query_247__Fun : global::haxe.lang.Function {
 		
-		public Persistence_mapResults_262__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+		public Persistence_query_247__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 247 "/my-component/src/persistence/Persistence.hx"
+			this.callback = callback;
+			#line 247 "/my-component/src/persistence/Persistence.hx"
+			this._gthis = _gthis;
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 247 "/my-component/src/persistence/Persistence.hx"
+			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), this._gthis.convertToHaxe(result));
+			#line 249 "/my-component/src/persistence/Persistence.hx"
+			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+		public global::persistence.Persistence _gthis;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class Persistence_mapResults_261__Fun : global::haxe.lang.Function {
+		
+		public Persistence_mapResults_261__Fun(global::haxe.lang.Function callback) : base(1, 0) {
 			#line 262 "/my-component/src/persistence/Persistence.hx"
 			this.callback = callback;
-			#line 262 "/my-component/src/persistence/Persistence.hx"
+		}
+		#line default
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 261 "/my-component/src/persistence/Persistence.hx"
+			object mappedResults = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
+			this.callback.__hx_invoke1_o(default(double), mappedResults);
+			return null;
+		}
+		#line default
+		
+		public global::haxe.lang.Function callback;
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class Persistence_mapResults_269__Fun : global::haxe.lang.Function {
+		
+		public Persistence_mapResults_269__Fun() : base(1, 0) {
+		}
+		
+		
+		public static global::persistence.Persistence_mapResults_269__Fun __hx_current;
+		
+		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
+			#line 269 "/my-component/src/persistence/Persistence.hx"
+			global::maglev.MagLevError error = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevError) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevError) (__fn_dyn1) )) );
+			throw ((global::System.Exception) (global::haxe.Exception.thrown(error.getMessage())) );
+		}
+		#line default
+		
+	}
+}
+
+
+
+#pragma warning disable 109, 114, 219, 429, 168, 162
+namespace persistence {
+	public class Persistence_mapResults_272__Fun : global::haxe.lang.Function {
+		
+		public Persistence_mapResults_272__Fun(global::haxe.lang.Function callback, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 272 "/my-component/src/persistence/Persistence.hx"
+			this.callback = callback;
+			#line 272 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 262 "/my-component/src/persistence/Persistence.hx"
+			#line 272 "/my-component/src/persistence/Persistence.hx"
 			global::maglev.MagLevAny result = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevAny) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevAny) (__fn_dyn1) )) );
 			this.callback.__hx_invoke1_o(default(double), this._gthis.convertToHaxe(result));
-			#line 264 "/my-component/src/persistence/Persistence.hx"
+			#line 274 "/my-component/src/persistence/Persistence.hx"
 			return global::maglev.MagLevResult.fromResult(global::maglev.MagLevNull.create());
 		}
 		#line default
@@ -1095,37 +1228,37 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence___hx_ctor_persistence_Persistence_20__Fun : global::haxe.lang.Function {
+	public class Persistence___hx_ctor_persistence_Persistence_22__Fun : global::haxe.lang.Function {
 		
-		public Persistence___hx_ctor_persistence_Persistence_20__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 20 "/my-component/src/persistence/Persistence.hx"
+		public Persistence___hx_ctor_persistence_Persistence_22__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 22 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 20 "/my-component/src/persistence/Persistence.hx"
+				#line 22 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				string recordType = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-				#line 22 "/my-component/src/persistence/Persistence.hx"
+				#line 24 "/my-component/src/persistence/Persistence.hx"
 				string operationName = (((global::maglev.MagLevString) (args.@get(1)) )).getString();
 				object strategyMethod = this._gthis.convertToHaxe(args.@get(2));
-				#line 24 "/my-component/src/persistence/Persistence.hx"
+				#line 26 "/my-component/src/persistence/Persistence.hx"
 				object updateMapper = null;
 				if (( args.size() > 3 )) {
-					#line 26 "/my-component/src/persistence/Persistence.hx"
+					#line 28 "/my-component/src/persistence/Persistence.hx"
 					updateMapper = this._gthis.convertToHaxe(args.@get(3));
 				}
 				
-				#line 28 "/my-component/src/persistence/Persistence.hx"
+				#line 30 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Null<bool> useRecordDataAsParams = default(global::haxe.lang.Null<bool>);
 				if (( args.size() > 4 )) {
-					#line 30 "/my-component/src/persistence/Persistence.hx"
+					#line 32 "/my-component/src/persistence/Persistence.hx"
 					useRecordDataAsParams = global::haxe.lang.Null<object>.ofDynamic<bool>(((object) (this._gthis.convertToHaxe(args.@get(4))) ));
 				}
 				
-				#line 32 "/my-component/src/persistence/Persistence.hx"
+				#line 34 "/my-component/src/persistence/Persistence.hx"
 				this._gthis.addMutator(recordType, operationName, strategyMethod, updateMapper, useRecordDataAsParams);
 				return global::maglev.MagLevResult.fromResult(global::maglev.MagLevBoolean.fromBool(true));
 			}
@@ -1142,44 +1275,44 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence___hx_ctor_persistence_Persistence_35__Fun : global::haxe.lang.Function {
+	public class Persistence___hx_ctor_persistence_Persistence_37__Fun : global::haxe.lang.Function {
 		
-		public Persistence___hx_ctor_persistence_Persistence_35__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 35 "/my-component/src/persistence/Persistence.hx"
+		public Persistence___hx_ctor_persistence_Persistence_37__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 37 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 35 "/my-component/src/persistence/Persistence.hx"
+				#line 37 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				string recordType = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-				#line 37 "/my-component/src/persistence/Persistence.hx"
+				#line 39 "/my-component/src/persistence/Persistence.hx"
 				string operationName = (((global::maglev.MagLevString) (args.@get(1)) )).getString();
 				object strategyMethod = this._gthis.convertToHaxe(args.@get(2));
-				#line 39 "/my-component/src/persistence/Persistence.hx"
+				#line 41 "/my-component/src/persistence/Persistence.hx"
 				object queryMapper = null;
 				if (( args.size() >= 4 )) {
-					#line 41 "/my-component/src/persistence/Persistence.hx"
+					#line 43 "/my-component/src/persistence/Persistence.hx"
 					queryMapper = this._gthis.convertToHaxe(args.@get(3));
 				}
 				
-				#line 43 "/my-component/src/persistence/Persistence.hx"
+				#line 45 "/my-component/src/persistence/Persistence.hx"
 				object resultMapper = null;
 				if (( args.size() >= 5 )) {
-					#line 45 "/my-component/src/persistence/Persistence.hx"
+					#line 47 "/my-component/src/persistence/Persistence.hx"
 					resultMapper = this._gthis.convertToHaxe(args.@get(4));
 				}
 				
-				#line 47 "/my-component/src/persistence/Persistence.hx"
+				#line 49 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.Null<bool> useQueryValuesAsParams = default(global::haxe.lang.Null<bool>);
 				if (( args.size() >= 6 )) {
-					#line 49 "/my-component/src/persistence/Persistence.hx"
+					#line 51 "/my-component/src/persistence/Persistence.hx"
 					useQueryValuesAsParams = new global::haxe.lang.Null<bool>((((global::maglev.MagLevBoolean) (args.@get(5)) )).getBool(), true);
 				}
 				
-				#line 51 "/my-component/src/persistence/Persistence.hx"
+				#line 53 "/my-component/src/persistence/Persistence.hx"
 				this._gthis.addGetter(recordType, operationName, strategyMethod, queryMapper, resultMapper, useQueryValuesAsParams);
 				return global::maglev.MagLevResult.fromResult(global::maglev.MagLevBoolean.fromBool(true));
 			}
@@ -1196,18 +1329,18 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence___hx_ctor_persistence_Persistence_59__Fun : global::haxe.lang.Function {
+	public class Persistence___hx_ctor_persistence_Persistence_61__Fun : global::haxe.lang.Function {
 		
-		public Persistence___hx_ctor_persistence_Persistence_59__Fun(global::maglev.MagLevResult maglevResult, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 60 "/my-component/src/persistence/Persistence.hx"
+		public Persistence___hx_ctor_persistence_Persistence_61__Fun(global::maglev.MagLevResult maglevResult, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 62 "/my-component/src/persistence/Persistence.hx"
 			this.maglevResult = maglevResult;
-			#line 60 "/my-component/src/persistence/Persistence.hx"
+			#line 62 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 59 "/my-component/src/persistence/Persistence.hx"
+			#line 61 "/my-component/src/persistence/Persistence.hx"
 			object haxeResult = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
 			this.maglevResult.setResult(this._gthis.convertToMagLev(haxeResult));
 			return null;
@@ -1225,26 +1358,26 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence___hx_ctor_persistence_Persistence_54__Fun : global::haxe.lang.Function {
+	public class Persistence___hx_ctor_persistence_Persistence_56__Fun : global::haxe.lang.Function {
 		
-		public Persistence___hx_ctor_persistence_Persistence_54__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 54 "/my-component/src/persistence/Persistence.hx"
+		public Persistence___hx_ctor_persistence_Persistence_56__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 56 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 54 "/my-component/src/persistence/Persistence.hx"
+				#line 56 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				string recordType = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-				#line 56 "/my-component/src/persistence/Persistence.hx"
+				#line 58 "/my-component/src/persistence/Persistence.hx"
 				string operationName = (((global::maglev.MagLevString) (args.@get(1)) )).getString();
 				object recordData = this._gthis.convertToHaxe(((global::maglev.MagLevArray) (args.@get(2)) ));
-				#line 58 "/my-component/src/persistence/Persistence.hx"
+				#line 60 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevResult maglevResult = global::maglev.MagLevResult.createAsync();
-				this._gthis.mutate(recordType, operationName, recordData, new global::persistence.Persistence___hx_ctor_persistence_Persistence_59__Fun(maglevResult, this._gthis));
-				#line 62 "/my-component/src/persistence/Persistence.hx"
+				this._gthis.mutate(recordType, operationName, recordData, new global::persistence.Persistence___hx_ctor_persistence_Persistence_61__Fun(maglevResult, this._gthis));
+				#line 64 "/my-component/src/persistence/Persistence.hx"
 				return maglevResult;
 			}
 			#line default
@@ -1260,18 +1393,18 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence___hx_ctor_persistence_Persistence_69__Fun : global::haxe.lang.Function {
+	public class Persistence___hx_ctor_persistence_Persistence_71__Fun : global::haxe.lang.Function {
 		
-		public Persistence___hx_ctor_persistence_Persistence_69__Fun(global::maglev.MagLevResult maglevResult, global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 70 "/my-component/src/persistence/Persistence.hx"
+		public Persistence___hx_ctor_persistence_Persistence_71__Fun(global::maglev.MagLevResult maglevResult, global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 72 "/my-component/src/persistence/Persistence.hx"
 			this.maglevResult = maglevResult;
-			#line 70 "/my-component/src/persistence/Persistence.hx"
+			#line 72 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
-			#line 69 "/my-component/src/persistence/Persistence.hx"
+			#line 71 "/my-component/src/persistence/Persistence.hx"
 			object haxeResult = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((object) (__fn_float1) )) : (((object) (__fn_dyn1) )) );
 			this.maglevResult.setResult(this._gthis.convertToMagLev(haxeResult));
 			return null;
@@ -1289,26 +1422,26 @@ namespace persistence {
 
 #pragma warning disable 109, 114, 219, 429, 168, 162
 namespace persistence {
-	public class Persistence___hx_ctor_persistence_Persistence_64__Fun : global::haxe.lang.Function {
+	public class Persistence___hx_ctor_persistence_Persistence_66__Fun : global::haxe.lang.Function {
 		
-		public Persistence___hx_ctor_persistence_Persistence_64__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
-			#line 64 "/my-component/src/persistence/Persistence.hx"
+		public Persistence___hx_ctor_persistence_Persistence_66__Fun(global::persistence.Persistence _gthis) : base(1, 0) {
+			#line 66 "/my-component/src/persistence/Persistence.hx"
 			this._gthis = _gthis;
 		}
 		#line default
 		
 		public override object __hx_invoke1_o(double __fn_float1, object __fn_dyn1) {
 			unchecked {
-				#line 64 "/my-component/src/persistence/Persistence.hx"
+				#line 66 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevArray args = ( (( __fn_dyn1 == global::haxe.lang.Runtime.undefined )) ? (((global::maglev.MagLevArray) (((object) (__fn_float1) )) )) : (((global::maglev.MagLevArray) (__fn_dyn1) )) );
 				string recordType = (((global::maglev.MagLevString) (args.@get(0)) )).getString();
-				#line 66 "/my-component/src/persistence/Persistence.hx"
+				#line 68 "/my-component/src/persistence/Persistence.hx"
 				string operationName = (((global::maglev.MagLevString) (args.@get(1)) )).getString();
 				object queryValues = this._gthis.convertToHaxe(((global::maglev.MagLevArray) (args.@get(2)) ));
-				#line 68 "/my-component/src/persistence/Persistence.hx"
+				#line 70 "/my-component/src/persistence/Persistence.hx"
 				global::maglev.MagLevResult maglevResult = global::maglev.MagLevResult.createAsync();
-				this._gthis.@get(recordType, operationName, queryValues, new global::persistence.Persistence___hx_ctor_persistence_Persistence_69__Fun(maglevResult, this._gthis));
-				#line 72 "/my-component/src/persistence/Persistence.hx"
+				this._gthis.@get(recordType, operationName, queryValues, new global::persistence.Persistence___hx_ctor_persistence_Persistence_71__Fun(maglevResult, this._gthis));
+				#line 74 "/my-component/src/persistence/Persistence.hx"
 				return maglevResult;
 			}
 			#line default
@@ -1328,15 +1461,15 @@ namespace persistence._Persistence {
 		
 		static Mutator() {
 			unchecked{
-				#line 277 "/my-component/src/persistence/Persistence.hx"
+				#line 287 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.FieldLookup.addFields(new int[]{5541879, 13816588}, new string[]{"obj", "SuppressWarnings"});
-				#line 277 "/my-component/src/persistence/Persistence.hx"
+				#line 287 "/my-component/src/persistence/Persistence.hx"
 				{
-					#line 277 "/my-component/src/persistence/Persistence.hx"
+					#line 287 "/my-component/src/persistence/Persistence.hx"
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						object __temp_odecl1 = new global::haxe.lang.DynamicObject(new int[]{13816588}, new object[]{new global::Array<object>(new object[]{"checkstyle:FieldDocComment"})}, new int[]{}, new double[]{});
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						global::persistence._Persistence.Mutator.__meta__ = new global::haxe.lang.DynamicObject(new int[]{5541879}, new object[]{__temp_odecl1}, new int[]{}, new double[]{});
 					}
 					
@@ -1351,28 +1484,28 @@ namespace persistence._Persistence {
 		
 		
 		public Mutator(string recordType, object strategyMethod, object updateMapper, bool useRecordDataAsParams) {
-			#line 283 "/my-component/src/persistence/Persistence.hx"
+			#line 293 "/my-component/src/persistence/Persistence.hx"
 			global::persistence._Persistence.Mutator.__hx_ctor_persistence__Persistence_Mutator(this, recordType, strategyMethod, updateMapper, useRecordDataAsParams);
 		}
 		#line default
 		
 		protected static void __hx_ctor_persistence__Persistence_Mutator(global::persistence._Persistence.Mutator __hx_this, string recordType, object strategyMethod, object updateMapper, bool useRecordDataAsParams) {
-			#line 284 "/my-component/src/persistence/Persistence.hx"
+			#line 294 "/my-component/src/persistence/Persistence.hx"
 			if ((  ! (global::Std.isOfType(((object) (strategyMethod) ), ((object) (typeof(string)) )))  &&  ! (( ((object) (strategyMethod) ) is global::haxe.lang.Function ))  )) {
-				#line 285 "/my-component/src/persistence/Persistence.hx"
+				#line 295 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("strategyMethod must be a string or function")) );
 			}
 			
-			#line 287 "/my-component/src/persistence/Persistence.hx"
+			#line 297 "/my-component/src/persistence/Persistence.hx"
 			if ((  ! (global::Std.isOfType(((object) (updateMapper) ), ((object) (typeof(string)) )))  &&  ! (( ((object) (updateMapper) ) is global::haxe.lang.Function ))  )) {
-				#line 288 "/my-component/src/persistence/Persistence.hx"
+				#line 298 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("updateMapper must be a string or function")) );
 			}
 			
-			#line 290 "/my-component/src/persistence/Persistence.hx"
+			#line 300 "/my-component/src/persistence/Persistence.hx"
 			__hx_this.recordType = recordType;
 			__hx_this.strategyMethod = strategyMethod;
-			#line 292 "/my-component/src/persistence/Persistence.hx"
+			#line 302 "/my-component/src/persistence/Persistence.hx"
 			__hx_this.updateMapper = updateMapper;
 			__hx_this.useRecordDataAsParams = useRecordDataAsParams;
 		}
@@ -1390,29 +1523,29 @@ namespace persistence._Persistence {
 		
 		public override double __hx_setField_f(string field, int hash, double @value, bool handleProperties) {
 			unchecked {
-				#line 277 "/my-component/src/persistence/Persistence.hx"
+				#line 287 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 954563242:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						this.updateMapper = ((object) (@value) );
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						this.strategyMethod = ((object) (@value) );
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					default:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_setField_f(field, hash, @value, handleProperties);
 					}
 					
@@ -1425,47 +1558,47 @@ namespace persistence._Persistence {
 		
 		public override object __hx_setField(string field, int hash, object @value, bool handleProperties) {
 			unchecked {
-				#line 277 "/my-component/src/persistence/Persistence.hx"
+				#line 287 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 6101114:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						this.useRecordDataAsParams = global::haxe.lang.Runtime.toBool(@value);
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 954563242:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						this.updateMapper = ((object) (@value) );
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						this.strategyMethod = ((object) (@value) );
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1633399275:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						this.recordType = global::haxe.lang.Runtime.toString(@value);
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					default:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_setField(field, hash, @value, handleProperties);
 					}
 					
@@ -1478,39 +1611,39 @@ namespace persistence._Persistence {
 		
 		public override object __hx_getField(string field, int hash, bool throwErrors, bool isCheck, bool handleProperties) {
 			unchecked {
-				#line 277 "/my-component/src/persistence/Persistence.hx"
+				#line 287 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 6101114:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return this.useRecordDataAsParams;
 					}
 					
 					
 					case 954563242:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return this.updateMapper;
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return this.strategyMethod;
 					}
 					
 					
 					case 1633399275:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return this.recordType;
 					}
 					
 					
 					default:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_getField(field, hash, throwErrors, isCheck, handleProperties);
 					}
 					
@@ -1523,25 +1656,25 @@ namespace persistence._Persistence {
 		
 		public override double __hx_getField_f(string field, int hash, bool throwErrors, bool handleProperties) {
 			unchecked {
-				#line 277 "/my-component/src/persistence/Persistence.hx"
+				#line 287 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 954563242:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return ((double) (global::haxe.lang.Runtime.toDouble(this.updateMapper)) );
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return ((double) (global::haxe.lang.Runtime.toDouble(this.strategyMethod)) );
 					}
 					
 					
 					default:
 					{
-						#line 277 "/my-component/src/persistence/Persistence.hx"
+						#line 287 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_getField_f(field, hash, throwErrors, handleProperties);
 					}
 					
@@ -1553,15 +1686,15 @@ namespace persistence._Persistence {
 		
 		
 		public override void __hx_getFields(global::Array<string> baseArr) {
-			#line 277 "/my-component/src/persistence/Persistence.hx"
+			#line 287 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("useRecordDataAsParams");
-			#line 277 "/my-component/src/persistence/Persistence.hx"
+			#line 287 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("updateMapper");
-			#line 277 "/my-component/src/persistence/Persistence.hx"
+			#line 287 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("strategyMethod");
-			#line 277 "/my-component/src/persistence/Persistence.hx"
+			#line 287 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("recordType");
-			#line 277 "/my-component/src/persistence/Persistence.hx"
+			#line 287 "/my-component/src/persistence/Persistence.hx"
 			base.__hx_getFields(baseArr);
 		}
 		#line default
@@ -1577,15 +1710,15 @@ namespace persistence._Persistence {
 		
 		static Getter() {
 			unchecked{
-				#line 301 "/my-component/src/persistence/Persistence.hx"
+				#line 311 "/my-component/src/persistence/Persistence.hx"
 				global::haxe.lang.FieldLookup.addFields(new int[]{5541879, 13816588}, new string[]{"obj", "SuppressWarnings"});
-				#line 301 "/my-component/src/persistence/Persistence.hx"
+				#line 311 "/my-component/src/persistence/Persistence.hx"
 				{
-					#line 301 "/my-component/src/persistence/Persistence.hx"
+					#line 311 "/my-component/src/persistence/Persistence.hx"
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						object __temp_odecl1 = new global::haxe.lang.DynamicObject(new int[]{13816588}, new object[]{new global::Array<object>(new object[]{"checkstyle:FieldDocComment"})}, new int[]{}, new double[]{});
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						global::persistence._Persistence.Getter.__meta__ = new global::haxe.lang.DynamicObject(new int[]{5541879}, new object[]{__temp_odecl1}, new int[]{}, new double[]{});
 					}
 					
@@ -1600,37 +1733,37 @@ namespace persistence._Persistence {
 		
 		
 		public Getter(string recordType, object strategyMethod, object queryMapper, object resultMapper, bool useQueryValuesAsParams) {
-			#line 308 "/my-component/src/persistence/Persistence.hx"
+			#line 318 "/my-component/src/persistence/Persistence.hx"
 			global::persistence._Persistence.Getter.__hx_ctor_persistence__Persistence_Getter(this, recordType, strategyMethod, queryMapper, resultMapper, useQueryValuesAsParams);
 		}
 		#line default
 		
 		protected static void __hx_ctor_persistence__Persistence_Getter(global::persistence._Persistence.Getter __hx_this, string recordType, object strategyMethod, object queryMapper, object resultMapper, bool useQueryValuesAsParams) {
-			#line 309 "/my-component/src/persistence/Persistence.hx"
+			#line 319 "/my-component/src/persistence/Persistence.hx"
 			if ((  ! (global::Std.isOfType(((object) (strategyMethod) ), ((object) (typeof(string)) )))  &&  ! (( ((object) (strategyMethod) ) is global::haxe.lang.Function ))  )) {
-				#line 310 "/my-component/src/persistence/Persistence.hx"
+				#line 320 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("strategyMethod must be a string or function")) );
 			}
 			
-			#line 312 "/my-component/src/persistence/Persistence.hx"
+			#line 322 "/my-component/src/persistence/Persistence.hx"
 			if ((  ! (global::Std.isOfType(((object) (queryMapper) ), ((object) (typeof(string)) )))  &&  ! (( ((object) (queryMapper) ) is global::haxe.lang.Function ))  )) {
-				#line 313 "/my-component/src/persistence/Persistence.hx"
+				#line 323 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("queryMapper must be a string or function")) );
 			}
 			
-			#line 315 "/my-component/src/persistence/Persistence.hx"
+			#line 325 "/my-component/src/persistence/Persistence.hx"
 			if ((  ! (global::Std.isOfType(((object) (resultMapper) ), ((object) (typeof(string)) )))  &&  ! (( ((object) (resultMapper) ) is global::haxe.lang.Function ))  )) {
-				#line 316 "/my-component/src/persistence/Persistence.hx"
+				#line 326 "/my-component/src/persistence/Persistence.hx"
 				throw ((global::System.Exception) (global::haxe.Exception.thrown("resultMapper must be a string or function")) );
 			}
 			
-			#line 318 "/my-component/src/persistence/Persistence.hx"
+			#line 328 "/my-component/src/persistence/Persistence.hx"
 			__hx_this.recordType = recordType;
 			__hx_this.strategyMethod = strategyMethod;
-			#line 320 "/my-component/src/persistence/Persistence.hx"
+			#line 330 "/my-component/src/persistence/Persistence.hx"
 			__hx_this.queryMapper = queryMapper;
 			__hx_this.resultMapper = resultMapper;
-			#line 322 "/my-component/src/persistence/Persistence.hx"
+			#line 332 "/my-component/src/persistence/Persistence.hx"
 			__hx_this.useQueryValuesAsParams = useQueryValuesAsParams;
 		}
 		#line default
@@ -1649,38 +1782,38 @@ namespace persistence._Persistence {
 		
 		public override double __hx_setField_f(string field, int hash, double @value, bool handleProperties) {
 			unchecked {
-				#line 301 "/my-component/src/persistence/Persistence.hx"
+				#line 311 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 1333802110:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.resultMapper = ((object) (@value) );
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 189188329:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.queryMapper = ((object) (@value) );
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.strategyMethod = ((object) (@value) );
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					default:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_setField_f(field, hash, @value, handleProperties);
 					}
 					
@@ -1693,56 +1826,56 @@ namespace persistence._Persistence {
 		
 		public override object __hx_setField(string field, int hash, object @value, bool handleProperties) {
 			unchecked {
-				#line 301 "/my-component/src/persistence/Persistence.hx"
+				#line 311 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 591874299:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.useQueryValuesAsParams = global::haxe.lang.Runtime.toBool(@value);
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1333802110:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.resultMapper = ((object) (@value) );
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 189188329:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.queryMapper = ((object) (@value) );
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.strategyMethod = ((object) (@value) );
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					case 1633399275:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						this.recordType = global::haxe.lang.Runtime.toString(@value);
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return @value;
 					}
 					
 					
 					default:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_setField(field, hash, @value, handleProperties);
 					}
 					
@@ -1755,46 +1888,46 @@ namespace persistence._Persistence {
 		
 		public override object __hx_getField(string field, int hash, bool throwErrors, bool isCheck, bool handleProperties) {
 			unchecked {
-				#line 301 "/my-component/src/persistence/Persistence.hx"
+				#line 311 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 591874299:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return this.useQueryValuesAsParams;
 					}
 					
 					
 					case 1333802110:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return this.resultMapper;
 					}
 					
 					
 					case 189188329:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return this.queryMapper;
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return this.strategyMethod;
 					}
 					
 					
 					case 1633399275:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return this.recordType;
 					}
 					
 					
 					default:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_getField(field, hash, throwErrors, isCheck, handleProperties);
 					}
 					
@@ -1807,32 +1940,32 @@ namespace persistence._Persistence {
 		
 		public override double __hx_getField_f(string field, int hash, bool throwErrors, bool handleProperties) {
 			unchecked {
-				#line 301 "/my-component/src/persistence/Persistence.hx"
+				#line 311 "/my-component/src/persistence/Persistence.hx"
 				switch (hash) {
 					case 1333802110:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return ((double) (global::haxe.lang.Runtime.toDouble(this.resultMapper)) );
 					}
 					
 					
 					case 189188329:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return ((double) (global::haxe.lang.Runtime.toDouble(this.queryMapper)) );
 					}
 					
 					
 					case 1853356980:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return ((double) (global::haxe.lang.Runtime.toDouble(this.strategyMethod)) );
 					}
 					
 					
 					default:
 					{
-						#line 301 "/my-component/src/persistence/Persistence.hx"
+						#line 311 "/my-component/src/persistence/Persistence.hx"
 						return base.__hx_getField_f(field, hash, throwErrors, handleProperties);
 					}
 					
@@ -1844,17 +1977,17 @@ namespace persistence._Persistence {
 		
 		
 		public override void __hx_getFields(global::Array<string> baseArr) {
-			#line 301 "/my-component/src/persistence/Persistence.hx"
+			#line 311 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("useQueryValuesAsParams");
-			#line 301 "/my-component/src/persistence/Persistence.hx"
+			#line 311 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("resultMapper");
-			#line 301 "/my-component/src/persistence/Persistence.hx"
+			#line 311 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("queryMapper");
-			#line 301 "/my-component/src/persistence/Persistence.hx"
+			#line 311 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("strategyMethod");
-			#line 301 "/my-component/src/persistence/Persistence.hx"
+			#line 311 "/my-component/src/persistence/Persistence.hx"
 			baseArr.push("recordType");
-			#line 301 "/my-component/src/persistence/Persistence.hx"
+			#line 311 "/my-component/src/persistence/Persistence.hx"
 			base.__hx_getFields(baseArr);
 		}
 		#line default
